@@ -8,3 +8,7 @@ We are hoping to answer the following questions:
 - Predict what a reviewer will review for a specific data
 - Predict what restaurants may close in near future and what will be an optimal business at that location
 - Predict what restaurant to open where
+
+
+
+
