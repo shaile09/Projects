@@ -25,7 +25,7 @@ Primary: Knar, Justin, Lisa
 4) X - Focuses on what technologies will be used for each section of the project. 
 Primary: Justin, Knar, Ebrahim
 
-### Description of the source of data (Pending)
+### Description of the source of data 
 
 The project team is planning to use a dataset that is extracted from the Kaggle website. 
 Business Details: https://www.kaggle.com/yelp-dataset/yelp-dataset#yelp_academic_dataset_business.json
@@ -45,6 +45,9 @@ Business Details: https://www.kaggle.com/yelp-dataset/yelp-dataset#yelp_academic
 | categories   |
 | hours        |
 
+### Schema
+
+Preliminary schema of the database is inlcuded as part of this segment. We are intending to use PgAdmin and Postgres.
 
 ### Hypothesis 
 
@@ -69,9 +72,9 @@ We are hoping to answer the following questions:
 
 ### Machine Learning Model 
 
-The project team is planning to use a linear regression model to determine if the rating for the new resturants will be good or bad. The data for rating is continous and we belive that we could use a linear regression model to determine if it will be good or bad. 
-Good rating = ratings >= 4
-Bad rating = ratings <= 3
+The project team is planning to use a linear regression model to determine if the rating for the new resturants will be good or bad. The data for star rating is continous and we belive that we could use a linear regression model to determine if it will be good or bad. 
+Good star rating = ratings >= 4
+Bad star rating = ratings <= 3
 
 ### Technology to be used 
 
