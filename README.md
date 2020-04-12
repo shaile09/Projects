@@ -42,12 +42,12 @@ Label = rating
 
 ### Analysis Questions
 
+We are hoping to answer the following questions:
+
 - What types of restaurants are in San Diego?
 - What are the Yelp review ratings (good or bad)?
 - What is the rating of the new resturants?
 - What other information does he need to open a restaurant?
-
-We are hoping to answer the following questions:
 - Predictive of the restaurant ratings (good or bad) 
 - Predict future reviews for a new restaurant based on the available data
 - Predict what a reviewer will review for a specific data
