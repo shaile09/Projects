@@ -25,42 +25,52 @@ Primary: Knar, Justin, Lisa, Ebrahim
 4) X - Focuses on what technologies will be used for each section of the project. 
 Primary: Justin, Knar
 
-## Description of the source of data (Pending)
+### Description of the source of data (Pending)
 
-The team is planning to connect to the Yelp API to conduct this analysis.
+The project team is planning to use a dataset that is extracted from the Kaggle website. 
 Business Details: https://www.yelp.com/developers/documentation/v3/business
 Detailed information of the businesses (restaurant id, location, address, phone number, price etc.) 
 Business reviews: https://www.yelp.com/developers/documentation/v3/business_reviews
 Includes restaurant id, rating, user id, time created, text, etc. 
 
+### Hypothesis 
 
-# Hypothesis 
-
-Null Hypothesis: There is no correlation between the type of restaurant type of restaurant NYC and review restaurant ratings  
-Hypothesis: There is a correlation between the type of restaurant type of restaurant NYC and review restaurant ratings 
+Null Hypothesis: There is no correlation between the type of restaurant and restaurant review ratings in the city of San Diego.
+Hypothesis: There is a correlation between the type of restaurant and restaurant review ratings in the city of San Diego.
 Dataset = Yelp or restaurant reviews
 Label = rating
 
-## Analysis Questions
+### Analysis Questions
+
+- What types of restaurants are in San Diego?
+- What are the Yelp review ratings (good or bad)?
+- What is the rating of the new resturants?
+- What other information does he need to open a restaurant?
+
 We are hoping to answer the following questions:
-- Predictive model ? Restaurant recommendation 
+- Predictive of the restaurant ratings (good or bad) 
 - Predict future reviews for a new restaurant based on the available data
 - Predict what a reviewer will review for a specific data
 - Predict what restaurants may close in near future and what will be an optimal business at that location
 - Predict what restaurant to open where
 
-## Machine Learning Model (Pending)
+### Machine Learning Model 
 
-Rating for new esturants will be good / bad..
+The project team is planning to use a linear regression model to determine if the rating for the new resturants will be good or bad. The data for rating is continous and we belive that we could use a linear regression model to determine if it will be good or bad. 
+Good rating = ratings >= 4
+Bad rating = ratings <= 3
 
-## Technology to be used (Pending)
+### Technology to be used 
 
-### Data Cleaning and Analysis
+#### Data Cleaning and Analysis
 We will be using Pandas to clean the data and perform exploratory analysis. Further analysis will be conducted using Python. We will be importing the yelp data downloaded from kaggle.com, and converting that dataset, which is in JSON format, into a dataframe.
-### Database Storage
+
+#### Database Storage
 Postgres is the database we will be using.
-### Machine Learning
+
+#### Machine Learning
 Linear Regression, Deep Learning, and Random Forest Classifier are the machine learning models we will be using to train and test our data. We will then choose which machine learning model is the best of the 3.
+
 ### Dashboard
 Tableau is the application we will be using to display our data. We feel that tableau will give the user the most simplest way of looking at which location geographically is best when considering location and type of restaurant to open. It will include comparable data, such as what type of restaurant it is, whether it got a good or a bad rating, and exactly where it is located.
 
