@@ -21,19 +21,21 @@ Primary: Lisa, Knar, Seghen
 
 3) Circle - Responsible for the mockup database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project. This includes a document that describes our schema of the database, which can be a markdown document or ERD. 
 Primary: Knar, Justin, Lisa, Ebrahim
-X - Focuses on what technologies will be used for each section of the project. Primary: Justin, Knar
 
-your team will need to come up with a question that can be answered with data, and you’ll need to source the data you intend to use. During this segment’s live session, your team will meet with your instructor to talk about your project topic—listen to the feedback before moving on to the next segment. By the end of the meeting, you’ll know what you'll be working on for the remainder of the course.
+4) X - Focuses on what technologies will be used for each section of the project. 
+Primary: Justin, Knar
 
-Completing an exploratory data analysis will help you determine if your topic is viable or if further consideration (or even a different topic) is needed. It’ll also help you prepare for that conversation with your instructor. It’s a good idea to think about what metrics you’ll be including in the machine learning portion.
+## Description of the source of data
 
-Before meeting with your instructor, your team will need to complete the following:
+The team is planning to connect to the Yelp API to conduct this analysis.
+Business Details: https://www.yelp.com/developers/documentation/v3/business
+Detailed information of the businesses (restaurant id, location, address, phone number, price etc.) 
+Business reviews: https://www.yelp.com/developers/documentation/v3/business_reviews
+Includes restaurant id, rating, user id, time created, text, etc. 
 
-Decide on a topic, source data, and perform exploratory data analysis.
-Create a repository and establish individual branches for each team member.
-Create a mockup of a machine learning model.
-Create a mockup of a database.
-Decide which technologies will be used.
+
+# Hypothesis 
+
 Null Hypothesis: There is no correlation between the type of restaurant type of restaurant NYC and review restaurant ratings  
 Hypothesis: There is a correlation between the type of restaurant type of restaurant NYC and review restaurant ratings 
 Dataset = Yelp or restaurant reviews
