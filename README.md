@@ -25,7 +25,7 @@ Primary: Knar, Justin, Lisa, Ebrahim
 4) X - Focuses on what technologies will be used for each section of the project. 
 Primary: Justin, Knar
 
-## Description of the source of data
+## Description of the source of data (Pending)
 
 The team is planning to connect to the Yelp API to conduct this analysis.
 Business Details: https://www.yelp.com/developers/documentation/v3/business
@@ -49,6 +49,20 @@ We are hoping to answer the following questions:
 - Predict what restaurants may close in near future and what will be an optimal business at that location
 - Predict what restaurant to open where
 
+## Machine Learning Model (Pending)
+
+Rating for new esturants will be good / bad..
+
+## Technology to be used (Pending)
+
+### Data Cleaning and Analysis
+We will be using Pandas to clean the data and perform exploratory analysis. Further analysis will be conducted using Python. We will be importing the yelp data downloaded from kaggle.com, and converting that dataset, which is in JSON format, into a dataframe.
+### Database Storage
+Postgres is the database we will be using.
+### Machine Learning
+Linear Regression, Deep Learning, and Random Forest Classifier are the machine learning models we will be using to train and test our data. We will then choose which machine learning model is the best of the 3.
+### Dashboard
+Tableau is the application we will be using to display our data. We feel that tableau will give the user the most simplest way of looking at which location geographically is best when considering location and type of restaurant to open. It will include comparable data, such as what type of restaurant it is, whether it got a good or a bad rating, and exactly where it is located.
 
 
 
