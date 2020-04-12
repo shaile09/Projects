@@ -20,18 +20,31 @@ Primary: Ebrahim, Seghen
 Primary: Lisa, Knar, Seghen
 
 3) Circle - Responsible for the mockup database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project. This includes a document that describes our schema of the database, which can be a markdown document or ERD. 
-Primary: Knar, Justin, Lisa, Ebrahim
+Primary: Knar, Justin, Lisa
 
 4) X - Focuses on what technologies will be used for each section of the project. 
-Primary: Justin, Knar
+Primary: Justin, Knar, Ebrahim
 
 ### Description of the source of data (Pending)
 
 The project team is planning to use a dataset that is extracted from the Kaggle website. 
-Business Details: https://www.yelp.com/developers/documentation/v3/business
-Detailed information of the businesses (restaurant id, location, address, phone number, price etc.) 
-Business reviews: https://www.yelp.com/developers/documentation/v3/business_reviews
-Includes restaurant id, rating, user id, time created, text, etc. 
+Business Details: https://www.kaggle.com/yelp-dataset/yelp-dataset#yelp_academic_dataset_business.json
+| business_id  |
+|--------------|
+| name         |
+| address      |
+| city         |
+| state        |
+| postal_code  |
+| latitude     |
+| longitude    |
+| stars        |
+| review_count |
+| is_open      |
+| attributes   |
+| categories   |
+| hours        |
+
 
 ### Hypothesis 
 
