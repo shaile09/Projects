@@ -1,5 +1,18 @@
 # finalProject
 
+# Team's Communication Protocols
+
+ - Our team mainly communicates and will communicate through Slack and Zoom meetings. 
+ - Will meet during the week to work on the project either whole group or small groups other than classtime
+ - Will also work individually to complete certain aspects of the project.
+ - Segment 1 
+          - Met several times (more than two times) outside class time to work on the project.
+          - Worked on choosing the topic for the project and finding the dataset. 
+          - Worked on import the dataset into a pandas dataframe.
+          - Worked on deciding what technologies to use.
+ - Segment 2
+          
+
 # Project Overview
 
 
