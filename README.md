@@ -11,6 +11,7 @@
           - Worked on import the dataset into a pandas dataframe.
           - Worked on deciding what technologies to use.
  - Segment 2
+         - TBA
           
 
 # Project Overview
