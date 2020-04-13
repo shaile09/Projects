@@ -1,6 +1,22 @@
 # Final Project 
 
 
+# Team's Communication Protocols
+
+ - Our team mainly communicates and will communicate through Slack and Zoom meetings. 
+ - Will meet during the week to work on the project either whole group or small groups other than classtime
+ - Will also work individually to complete certain aspects of the project.
+ - Segment 1 
+          - Met several times (more than two times) outside class time to work on the project.
+          - Worked on choosing the topic for the project and finding the dataset. 
+          - Worked on import the dataset into a pandas dataframe.
+          - Worked on deciding what technologies to use.
+ - Segment 2
+         - TBA
+          
+
+=======
+
 ## First Segment 
 
 This week's project focused on the selecting a project idea. The goal of this week was to decide on our overall project, selecting your question, building a model, finding a dataset, using a database using CSV or JSON files to prototype our idea. In this segment, we began by gathering a project team to help support the project.
@@ -59,7 +75,8 @@ Label = rating
 
 ### Analysis Questions
 
-=======
+
+
 # Project Overview
 
 
