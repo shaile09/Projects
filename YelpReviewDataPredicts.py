@@ -12,17 +12,22 @@ from sklearn.preprocessing import OneHotEncoder
 import tensorflow as tf
 
 # %%
+# The cleaned data is loaded into postgres database. It is also formatted in the format required for ML during transformation process.
+# First option that we are trying  the liner regression since the data is continuous. Based on the line identified, the output variable
+# will be predicted for the input vairable
+# Once the complete dataset is loaded and the accuracy is identified, we will pick the best approch. This should be sometime in next session
+#%%
 #Pull data from busiensses table from postgres
 engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost/Yelp')
 
 # %%
 ReviewsDF = pd.read_sql('select * from reviews',engine)
 ReviewsDF.head()
+
 # %%
 # Generate our categorical variable list
 reviews_cat = ReviewsDF.dtypes[ReviewsDF.dtypes == "object"].index.tolist()
 ReviewsDF[reviews_cat].nunique()
-# %%
 
 # %%
 #Identify your label and features
@@ -62,9 +67,11 @@ X_df.head()
 # %%
 from sqlalchemy.orm import Session
 session = Session(engine)
+
 #%%
 #Import data into postgres
 X_df.to_sql(name='output', con=engine, if_exists='replace' ,index=False)
+
 #%%
 print('Intercept: \n', model.intercept_)
 print('Coefficients: \n', model.coef_)

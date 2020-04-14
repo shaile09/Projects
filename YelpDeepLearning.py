@@ -8,6 +8,12 @@ from sklearn.metrics import accuracy_score
 import pandas as pd
 import tensorflow as tf
 from sqlalchemy import create_engine
+#%%
+# The cleaned data is loaded into postgres database. It is also formatted in the format required for ML during transformation process.
+# We are trying random forest classifier as the data will be divided into smaller sets and prediction could be near to accuracy
+# We are also adding deep learning to get more neural network predition
+# Based on the line identified, the output variable will be predicted for the input vairable
+# Once the complete dataset is loaded and the accuracy is identified, we will pick the best approch. This should be sometime in next session
 
 # %%
 #Pull data from busiensses table from postgres
@@ -16,10 +22,6 @@ engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost/Yelp')
 # %%
 ReviewsDF = pd.read_sql('select * from reviews',engine)
 ReviewsDF.head()
-# # %%
-# # Generate our categorical variable list
-# reviews_cat = ReviewsDF.dtypes[ReviewsDF.dtypes == "object"].index.tolist()
-# ReviewsDF[reviews_cat].nunique()
 
 # %%
 #Identify your label and features
@@ -28,15 +30,19 @@ X.shape
 
 # %%
 y = ReviewsDF.stars
+
 # %%
 # Split training/test datasets
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42, stratify=y)
+
 # %%
 # Create a StandardScaler instance
 scaler = StandardScaler()
+
 # %%
 # Fit the StandardScaler
 X_scaler = scaler.fit(X_train)
+
 # %%
 # Scale the data
 X_train_scaled = X_scaler.transform(X_train)
@@ -70,11 +76,11 @@ X_df.head()
 # %%
 from sqlalchemy.orm import Session
 session = Session(engine)
+
 #%%
 #Import data into postgres
 X_df.to_sql(name='output_table', con=engine, if_exists='replace' ,index=False)
 #%%
-
 
 # %%
 # Define the model - deep neural net
