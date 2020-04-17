@@ -91,8 +91,7 @@ Label = rating
  - Detailed information of the businesses (restaurant id, location, address, phone number, price etc.) 
  - Business reviews: https://www.yelp.com/developers/documentation/v3/business_reviews
  - Includes restaurant id, rating, user id, time created, text, etc.
-=======
-# This is a test
+
 
 Null Hypothesis: There is no correlation between the type of restaurant type of restaurant NYC and review restaurant ratings  
 Hypothesis: There is a correlation between the type of restaurant type of restaurant NYC and review restaurant ratings 
