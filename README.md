@@ -79,9 +79,10 @@ Label = rating
 
 # Project Overview
 
+- Bill (an investor) went to work to visit San Diego for a few days and he really liked the restaurant options that are available since he is interested in opening a restaurant business himself.  
 
- - Bill (an investor) went to work to visit NYC for a few days and he really liked the restaurant options that are available since he is interested in opening a restaurant business himself.  
- - In the few days he was in NYC, he was using the Yelp to choose different restaurants near his hotel. Bill is thinking about opening a restaurant in NYC as there is a lot of variations of food. Before he opens a restaurant, he is interested in learning more what types of restaurants are in NYC, what are the yelp reviews, and additional details that would help him open a restaurant.
+-In the few days he was in San Diego, he was using the Yelp to choose different restaurants near his hotel. Bill is thinking about opening a restaurant in San Diego as there is a lot of variations of food. Before he opens a restaurant, he is interested in learning more about what types of restaurants are in San Diego, what are the yelp review ratings, and additional details that would help him open a restaurant. 
+
 
 # Description of the source of data
 
@@ -132,8 +133,9 @@ Postgres is the database we will be using.
 Linear Regression, Deep Learning, and Random Forest Classifier are the machine learning models we will be using to train and test our data. We will then choose which machine learning model is the best of the 3.
 
 ### Dashboard
+
 Tableau is the application we will be using to display our data. We feel that tableau will give the user the most simplest way of looking at which location geographically is best when considering location and type of restaurant to open. It will include comparable data, such as what type of restaurant it is, whether it got a good or a bad rating, and exactly where it is located.
-=======
+
 
 
 - Predict what type of restaurant to open and where based off of review ratings (Bad 0-2, Good 3-5)
