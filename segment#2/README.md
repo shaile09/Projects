@@ -12,19 +12,57 @@
           - Worked on import the dataset into a pandas dataframe.
           - Worked on deciding what technologies to use.
  - Segment 2
-         - TBA
-          
+         - Met on Tuesdays, Thursdays and Saturdays as a group.
+	 - Communicated through Slack group chat and Zoom meetings outside class time.
+	 - Worked on the preprocessing the dataset for Machine Learing Model and Visualazation.
+	 - Worked on creating Machine Learning Model.
+	 - Worked on creating Google Slides for the project description.
+	
+=======
+# Project Overview
+
+ - Bill (an investor) went to work to visit Phoenix and Las Vegas for a few days and he really liked the restaurant options that are available since he is interested in opening a restaurant business himself.  
+ - In the few days he was in both cities, he was using the Yelp to choose different restaurants near his hotels. Bill is thinking about opening a restaurant in either Las Vegas or Phoenix as there is a lot of variations of food. Before he opens a restaurant, he is interested in learning more what types of restaurants are in these cities, what are the yelp reviews, and additional details that would help him make a decision where to open restaurant.
+
+## Description of the source of data
+
+ - The team found a dataset on Kaggle.com to conduct this analysis - https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2
+ - From the data set will be using business data
+ 	- Detailed information of the businesses (restaurant id, location, address, phone number, stars, etc.) 
+ - And will also use Business reviews data
+ 	- Includes restaurant id, stars, user id, time created, text, etc.
 
 =======
+# Hypothesis
 
-## First Segment 
+Null Hypothesis: There is no correlation between the type of restaurant and review restaurant star rating based on the either Las Vegas or Phoenix
+Hypothesis: There is a correlation between the type of restaurant and review restaurant ratings based on the either Las Vegas or Phoenix
+Dataset = businesses and restaurant reviews
+Label = stars
+
+=======
+# Analysis Questions
+
+We are hoping to answer the following questions:
+
+- What types of restaurants are in Phoenix and Las Vegas? To choose the mail restaurant types for the analysis
+- What are the Yelp review ratings (good or bad)?
+- What is the rating of the new resturants?
+- What other information does the investor need to open a restaurant?
+- Predictive of the restaurant ratings (good or bad) 
+- Predict future reviews for a new restaurant based on the available data
+- Predict what a reviewer will review for a specific data
+- Predict what restaurants may close in near future and what will be an optimal business at that location
+- Predict what restaurant to open where
+
+# First Segment 
 
 This week's project focused on the selecting a project idea. The goal of this week was to decide on our overall project, selecting your question, building a model, finding a dataset, using a database using CSV or JSON files to prototype our idea. In this segment, we began by gathering a project team to help support the project.
 
 ### Background
 
-As part of this project, we are woking with Bill, who is an investor in the west cost. Bill recently went to visit San Diego for a few days and he really liked the restaurant options that are available since he is interested in opening a restaurant business himself.  
-In the few days he was in San Diego, he was using the Yelp to choose different restaurants near his hotel. Bill is thinking about opening a restaurant in San Diego as there is a lot of variations of food. Before he opens a restaurant, he wants to learn about the   about what types of restaurants are in San Diego, what are the Yelp review ratings (good or bad), what is the rating of the new resturants, and additional details that would help him open a restaurant. 
+ - Bill (an investor) went to work to visit Phoenix and Las Vegas for a few days and he really liked the restaurant options that are available since he is interested in opening a restaurant business himself.  
+ - In the few days he was in both cities, he was using the Yelp to choose different restaurants near his hotels. Bill is thinking about opening a restaurant in either Las Vegas or Phoenix as there is a lot of variations of food. Before he opens a restaurant, he is interested in learning more what types of restaurants are in these cities, what are the yelp reviews, and additional details that would help him make a decision where to open restaurant.
 
 ### Project Team 
 
@@ -45,7 +83,8 @@ Primary: Justin, Knar, Ebrahim
 ### Description of the source of data 
 
 The project team is planning to use a dataset that is extracted from the Kaggle website. 
-Business Details: https://www.kaggle.com/yelp-dataset/yelp-dataset#yelp_academic_dataset_business.json
+Business Details: https://www.kaggle.com/yelp-dataset/yelp-dataset#yelp_academic_dataset_business.json - preprocessed this dataset and determined that it does not have the data needed to be used for the anaysis
+Other dataset used: https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2 - used this dataset as it has the data for the cities we need to do the analysis
 | business_id  |
 |--------------|
 | name         |
@@ -66,54 +105,6 @@ Business Details: https://www.kaggle.com/yelp-dataset/yelp-dataset#yelp_academic
 
 Preliminary schema of the database is inlcuded as part of this segment. We are intending to use PgAdmin and Postgres.
 
-### Hypothesis 
-
-Null Hypothesis: There is no correlation between the type of restaurant and restaurant review ratings in the city of San Diego.
-Hypothesis: There is a correlation between the type of restaurant and restaurant review ratings in the city of San Diego.
-Dataset = Yelp or restaurant reviews
-Label = rating
-
-### Analysis Questions
-
-
-
-# Project Overview
-
-- Bill (an investor) went to work to visit San Diego for a few days and he really liked the restaurant options that are available since he is interested in opening a restaurant business himself.  
-
--In the few days he was in San Diego, he was using the Yelp to choose different restaurants near his hotel. Bill is thinking about opening a restaurant in San Diego as there is a lot of variations of food. Before he opens a restaurant, he is interested in learning more about what types of restaurants are in San Diego, what are the yelp review ratings, and additional details that would help him open a restaurant. 
-
-
-# Description of the source of data
-
- - The team is planning to connect to the Yelp API to conduct this analysis.
- - Business Details: https://www.yelp.com/developers/documentation/v3/business
- - Detailed information of the businesses (restaurant id, location, address, phone number, price etc.) 
- - Business reviews: https://www.yelp.com/developers/documentation/v3/business_reviews
- - Includes restaurant id, rating, user id, time created, text, etc.
-
-
-Null Hypothesis: There is no correlation between the type of restaurant type of restaurant NYC and review restaurant ratings  
-Hypothesis: There is a correlation between the type of restaurant type of restaurant NYC and review restaurant ratings 
-Dataset = Yelp or restaurant reviews
-Label = rating
-
-
-## Analysis Questions
-
-We are hoping to answer the following questions:
-
-- What types of restaurants are in San Diego?
-- What are the Yelp review ratings (good or bad)?
-- What is the rating of the new resturants?
-- What other information does he need to open a restaurant?
-- Predictive of the restaurant ratings (good or bad) 
-- Predict future reviews for a new restaurant based on the available data
-- Predict what a reviewer will review for a specific data
-- Predict what restaurants may close in near future and what will be an optimal business at that location
-
-- Predict what restaurant to open where
-
 ### Machine Learning Model 
 
 The project team is planning to use a linear regression model to determine if the rating for the new resturants will be good or bad. The data for star rating is continous and we belive that we could use a linear regression model to determine if it will be good or bad. 
@@ -132,15 +123,40 @@ Postgres is the database we will be using.
 Linear Regression, Deep Learning, and Random Forest Classifier are the machine learning models we will be using to train and test our data. We will then choose which machine learning model is the best of the 3.
 
 ### Dashboard
-
 Tableau is the application we will be using to display our data. We feel that tableau will give the user the most simplest way of looking at which location geographically is best when considering location and type of restaurant to open. It will include comparable data, such as what type of restaurant it is, whether it got a good or a bad rating, and exactly where it is located.
-
-
-
-- Predict what type of restaurant to open and where based off of review ratings (Bad 0-2, Good 3-5)
-- Users will be able to see where are the good restaurants vs. not
-
 =======
-- Predict what restaurant to open where
 
+# Second Segment
 
+## Prepocessing of the Yelp Data.
+
+- Import and analyze yelp businesses dataset.
+	- Opened business.json file and imported into a dataframe.
+	- The Yelp dataset includes data on different businesses other than restaurants.
+	- Filtered only open businesses and dropped columns that will not be used for the analysis (neighborhood, is_open).
+	- Counted how many values each state has:
+		- The result showed that Arizona and Nevada states have the most values, which indicates that we have enough data to do our analysis.
+	- Filtered out all the restaurant businesses based on category column into new dataframe.
+	- Explored to see how many unique categories of restaurants are in the dataset
+		- Created a new column, ethnic_type, to put all the categories needed for the analysis.
+		- Chose only 20 unique restaurant types:
+			- African, American, Asian_Fusion, British, Chinese, French, Greek, Hawaiian, Indian, Italian, Japanese, Korean, Mediterranean, Mexican, Middle_Eastern, Spanish, Thai, Vietnamese
+		- Explored the value count for the cities to see if we have enough data to do analysis for cities Phoenix and Las Vegas.
+			- Data shows we have 2455 business for Las Vegas and 1557 businesses for Phoenix.
+			- Dropped all the data except for Phoenix and Las Vegas.
+			- Created business_info dataframe to import the tables to posgres.
+- Import and analyze yelp reviews dataset.
+	- Opened review.json file and put the data into reviews_df dataframe.
+	- Merged reviews_df and business_info dataframes by business_id to select all the reviews that are matched with are selected businesses.
+	- Dropped rows with null values.
+	- Rename star_x column to restaurant_star and star_y to review_star as star_x is the restaurant rating from business table and star_y is the reviewers rating for the corresponding restaurant.
+	- Created business_reviews_df dataframe to import to posgres.
+	- Created a connection to SQL and imported the tables of the cleaned data into posgres.
+	- In addition, created csv files of the cleaned data.
+
+- Database
+	- Database stores business_info, business_reviews and review_prediction (machine_learning) tables.
+	- Yelp_db is used to pull from the batabase the business_reviews and business_info tables for machine learning.
+	- The  business_info and business_reviews are joined to create join within posgres.
+	- Due to change restrictions we do not have shared databased, instead use local posgres database with same table schema (schema.sql) to acess the data.
+		- The sample database can be accessed at https://yelpdbbackup.s3.us-east-2.amazonaws.com/Yelp_db.sql. 
