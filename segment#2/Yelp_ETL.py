@@ -50,6 +50,11 @@ with open(f'dataset/business.json', mode='r', encoding="utf8") as file:
 business_df = pd.DataFrame(yelp_source)
 business_df.head()
 
+#%%
+# change column names
+business_df = business_df.rename({"name":"business_name", "state":"us_state"}, axis='columns')
+business_df.head()
+
 # %%
 # Remove all closed restaurants
 a = [0]
@@ -62,7 +67,7 @@ business_df.head()
 
 # %%
 # Finding the state that has most values in the dataset
-business_df['state'].value_counts()
+business_df['us_state'].value_counts()
 
 # %%
 # Filter all businesses of AZ
@@ -70,7 +75,7 @@ states = ["AZ", "NV"]
 
 # Filter all businesses of AZ & 
 ##states = ["AZ"]
-aznv_df = business_df.loc[business_df['state'].isin(states)]
+aznv_df = business_df.loc[business_df['us_state'].isin(states)]
 aznv_df.head()
 
 # %%
@@ -97,24 +102,24 @@ AZNV_restaurants = AZNV_restaurants.copy()
 
 # %%
 # Filtering out type of Restaurants
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('American'),'EthnicType'] = 'American'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Mexican'), 'EthnicType'] = 'Mexican'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Italian'), 'EthnicType'] = 'Italian'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Japanese'), 'EthnicType'] = 'Japanese'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Chinese'), 'EthnicType'] = 'Chinese'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Thai'), 'EthnicType'] = 'Thai'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Mediterranean'), 'EthnicType'] = 'Mediterranean'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('French'), 'EthnicType'] = 'French'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Vietnamese'), 'EthnicType'] = 'Vietnamese'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Greek'),'EthnicType'] = 'Greek'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Indian'),'EthnicType'] = 'Indian'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Korean'),'EthnicType'] = 'Korean'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Hawaiian'),'EthnicType'] = 'Hawaiian'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('African'),'EthnicType'] = 'African'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Spanish'),'EthnicType'] = 'Spanish'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Middle_Eastern'),'EthnicType'] = 'Middle_Eastern'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Asian Fusion'),'EthnicType'] = 'Asian_Fusion'
-AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('British'),'EthnicType'] = 'British'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('American'),'ethnic_type'] = 'American'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Mexican'), 'ethnic_type'] = 'Mexican'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Italian'), 'ethnic_type'] = 'Italian'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Japanese'), 'ethnic_type'] = 'Japanese'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Chinese'), 'ethnic_type'] = 'Chinese'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Thai'), 'ethnic_type'] = 'Thai'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Mediterranean'), 'ethnic_type'] = 'Mediterranean'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('French'), 'ethnic_type'] = 'French'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Vietnamese'), 'ethnic_type'] = 'Vietnamese'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Greek'),'ethnic_type'] = 'Greek'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Indian'),'ethnic_type'] = 'Indian'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Korean'),'ethnic_type'] = 'Korean'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Hawaiian'),'ethnic_type'] = 'Hawaiian'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('African'),'ethnic_type'] = 'African'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Spanish'),'ethnic_type'] = 'Spanish'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Middle_Eastern'),'ethnic_type'] = 'Middle_Eastern'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('Asian Fusion'),'ethnic_type'] = 'Asian_Fusion'
+AZNV_restaurants.loc[AZNV_restaurants.category.str.contains('British'),'ethnic_type'] = 'British'
 
 AZNV_restaurants.head()
 
@@ -150,12 +155,12 @@ AZNV_restaurants.head(n=20)
 
 # %%
 # Create businesses dataframe to import to posgres
-businesses = AZNV_restaurants.filter(['business_id', 'name'], axis=1)
-businesses.head()
+# businesses = AZNV_restaurants.filter(['business_id', 'business_name'], axis=1)
+# businesses.head()
 
 # %%
 # Create business_info dataframe to import to posgres
-business_info = AZNV_restaurants.filter(['business_id', 'city', 'state', 'postal_code', 'latitude', 'longitude', 'review_count', 'EthnicType', 'stars'], axis=1)
+business_info = AZNV_restaurants.filter(['business_id', 'business_name', 'city', 'us_state', 'postal_code', 'latitude', 'longitude', 'review_count', 'ethnic_type', 'stars'], axis=1)
 business_info.head()
 
 # %% [markdown]
@@ -163,7 +168,7 @@ business_info.head()
 
 # %%
 #Import Business review JSON file
-file_dir = 'C:/Users/knush/GitRepository/Class_Practice/FinalProject/dataset/'
+file_dir = 'C:/Users/knush/GitRepository/Class_Practice/FinalProject/finalProject2020/segment#2/dataset/'
 f'{file_dir}review.json'
 
 # %%
@@ -176,6 +181,10 @@ with open(f'{file_dir}review.json', mode='r', encoding="utf8", errors='ignore') 
 reviews_df = pd.DataFrame(reviews_data)
 reviews_df.head()
 
+#%%
+# Chamge column names
+reviews_df = reviews_df.rename({"date":"review_date", "text":"review"}, axis='columns')
+reviews_df.head()
 # %%
 #Count the rows
 reviews_df.count()
@@ -204,7 +213,7 @@ business_reviews.count()
 
 # %%
 # Category counts
-categoryCounts=business_reviews.EthnicType.value_counts()
+categoryCounts=business_reviews.ethnic_type.value_counts()
 categoryCounts
 
 # %%
@@ -212,16 +221,16 @@ business_reviews.columns
 
 # %%
 # Create a dataframe needed for Machine Learning model to import to posgres
-mlbusiness_reviews = business_reviews.filter(['review_id', 'business_id' , 'review_star', 'useful', 'EthnicType', 'city', 'state', 'postal_code', 
-'latitude', 'longitude',], axis=1)
-mlbusiness_reviews.head()
+# mlbusiness_reviews = business_reviews.filter(['review_id', 'business_id' , 'review_star', 'useful', 'EthnicType', 'city', 'state', 'postal_code', 
+# 'latitude', 'longitude',], axis=1)
+# mlbusiness_reviews.head()
 
 # %%
-mlbusiness_reviews.count()
+# mlbusiness_reviews.count()
 
 # %%
 # Create business_reviews dataframe to import to posgres
-business_reviews_df = business_reviews.filter(['review_id', 'user_id', 'business_id', 'date', 'review_star', 'text', 'useful', 'city', 'state', 'postal_code', 'latitude', 'longitude', 'EthnicType'], axis=1)
+business_reviews_df = business_reviews.filter(['review_id', 'user_id', 'business_id', 'review_date', 'review_star', 'review', 'useful'], axis=1)
 business_reviews_df.head()
 
 #%%
@@ -234,7 +243,7 @@ engine = create_engine(db_string)
 # # Import the Yelp data to SQL
 
 #businesses > businesses table
-businesses.to_sql(name='businesses', con=engine, if_exists='replace' ,index=False)
+# businesses.to_sql(name='businesses', con=engine, if_exists='replace' ,index=False)
 
 #business_info > business_info table
 business_info.to_sql(name='business_info', con=engine, if_exists='replace' ,index=False)
@@ -244,14 +253,14 @@ business_info.to_sql(name='business_info', con=engine, if_exists='replace' ,inde
 business_reviews_df.to_sql(name='business_reviews', con=engine, if_exists='replace' ,index=False)
 
 #mlbusiness_reviews > mlbusiness_reviews table
-mlbusiness_reviews.to_sql(name='mlbusiness_reviews', con=engine, if_exists='replace' ,index=False)
+# mlbusiness_reviews.to_sql(name='mlbusiness_reviews', con=engine, if_exists='replace' ,index=False)
 
 
 # %%
 # Export table to csv file if needed
 
 #businesses > businesses.csv
-businesses.to_csv('businesses.csv')
+# businesses.to_csv('businesses.csv')
 
 #business_info > business_info.csv
 business_info.to_csv('business_info.csv')
@@ -260,6 +269,6 @@ business_info.to_csv('business_info.csv')
 business_reviews_df.to_csv('business_reviews_df.csv')
 
 #mlbusiness_reviews > mlbusiness_reviews.csv
-mlbusiness_reviews.to_csv('mlbusiness_reviews.csv')
+# mlbusiness_reviews.to_csv('mlbusiness_reviews.csv')
 
 # %%
