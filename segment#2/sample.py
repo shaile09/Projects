@@ -6,18 +6,14 @@ import pandas as pd
 from sklearn.cluster import KMeans
 import json
 from pandas.io.json import json_normalize
-from sqlalchemy import create_engine
 
 # %% [markdown]
 # ### Clean Yelp_business dataset 
 
-#%%
-#Lisa added
-engine = create_engine('postgresql+psycopg2://postgres:postgres@localhost/Yelp')
-
 # %%
 with open(f'yelp_dataset/dataset/business.json', mode='r', encoding="utf8") as file:
     yelp_source = [json.loads(line) for line in file]
+
 
 #%%
 business = pd.DataFrame(yelp_source)
@@ -42,6 +38,9 @@ states = ["AZ"]
 usa=business.loc[business['state'].isin(states)]
 usa.head()
 
+#%%
+#usa = usa.head(n=200)
+
 # %%
 ## select all restaurants in USA
 usa['category'] = usa['categories'].apply(lambda x: ','.join(map(str, x)))
@@ -49,6 +48,8 @@ usa.head()
 
 #%%
 us_restaurants=usa[usa['category'].str.contains('Restaurants')]
+
+#%%
 
 #%%
 ## select out 16 cuisine types of restaurants and rename the category
@@ -77,6 +78,13 @@ us_restaurants.loc[us_restaurants.category.str.contains('Seafood'),'category'] =
 us_restaurants.loc[us_restaurants.category.str.contains('Food Stands'),'category'] = 'Food Stands'
 us_restaurants.loc[us_restaurants.category.str.contains('Barbeque'),'category'] = 'American'
 
+#us_restaurants.category[:20]
+
+#%%
+
+#%%
+us_restaurants.head()
+
 #%%
 len(us_restaurants['city'].unique())
 
@@ -96,47 +104,28 @@ print(us_restaurants['postal_code'].value_counts())
 
 # %%
 # label reviews as positive or negative or neural
-# us_restaurants['labels'] = ''
-# us_restaurants.loc[us_restaurants.stars >=4, 'labels'] = 'positive'
-# us_restaurants.loc[us_restaurants.stars ==3, 'labels'] = 'neural'
-# us_restaurants.loc[us_restaurants.stars <3, 'labels'] = 'negative'
-# us_restaurants.head()
+us_restaurants['labels'] = ''
+us_restaurants.loc[us_restaurants.stars >=4, 'labels'] = 'positive'
+us_restaurants.loc[us_restaurants.stars ==3, 'labels'] = 'neural'
+us_restaurants.loc[us_restaurants.stars <3, 'labels'] = 'negative'
+us_restaurants.head()
+
+# %%
+us_restaurants.drop(['attributes', 'hours'], axis=1, inplace=True)
+us_restaurants.head()
+
+# %%
+us_restaurants.drop(['categories', 'is_open', 'address'], axis=1, inplace=True)
+us_restaurants.head()
+
+# %%
+postalcodes = us_restaurants.groupby(['postal_code'])['postal_code','category','stars','review_count']
+
+# %%
+postalcodes.head()
 
 
 # %%
-us_restaurants.drop(['stars','latitude','longitude','categories','is_open', 'address','attributes', 'hours'], axis=1, inplace=True)
-
-# %%
-#postalcodes = us_restaurants.groupby(['postal_code'])['postal_code','category','stars','review_count']
-#Lisa added
-us_restaurants.columns
-us_restaurants.to_sql(name='businesses', con=engine, if_exists='replace' ,index=False)
-
-# %%
-#data from reviews
-with open(f'yelp_dataset/dataset/review.json', mode='r', encoding="utf8") as file:
-    yelp_source = [json.loads(line) for line in file]
-
-# %%
-review = pd.DataFrame(yelp_source)
-review.count
-
-# %%
-review.drop(['text','funny','cool'], axis=1, inplace=True)
-
-# %%
-review.count
-
-# %%
-business_reviews = pd.merge(left=us_restaurants, right=review, how='left', left_on='business_id', right_on='business_id')
-
-#%%
-business_reviews.columns
-
-# %%
-business_reviews.drop(['name', 'city', 'state', 'postal_code', 'review_count', 'category'], axis=1, inplace=True)
-
-# %%
-business_reviews.to_sql(name='reviews', con=engine, if_exists='replace' ,index=False)
+postalcodes['85022']
 
 # %%
