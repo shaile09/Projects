@@ -1,0 +1,642 @@
+postal_code,city,ethnic_type,prediction
+85004,Phoenix,Chinese,3
+85022,Phoenix,Italian,3
+85032,Phoenix,Indian,3
+85033,Phoenix,Italian,1
+85040,Phoenix,Mexican,3
+89109,Las Vegas,Chinese,3
+Combined,Phoenix,Mexican,3
+85004,Phoenix,Mexican,3
+85013,Phoenix,Mexican,3
+85015,Phoenix,Italian,3
+85016,Phoenix,Chinese,3
+85016,Phoenix,Italian,3
+85032,Phoenix,Mexican,3
+85033,Phoenix,American,1
+85034,Phoenix,American,1
+85035,Phoenix,American,1
+85035,Phoenix,Italian,2
+85053,Phoenix,Mexican,3
+89101,Las Vegas,Mexican,3
+89102,Las Vegas,Chinese,3
+89103,Las Vegas,Japanese,3
+89104,Las Vegas,Mexican,3
+89109,Las Vegas,American,3
+89109,Las Vegas,Asian_Fusion,3
+89109,Las Vegas,Italian,3
+89117,Las Vegas,Mexican,1
+89119,Las Vegas,American,3
+89119,Las Vegas,Asian_Fusion,3
+89119,Las Vegas,Mexican,3
+89121,Las Vegas,Italian,3
+89169,Las Vegas,Italian,3
+Combined,Las Vegas,American,3
+Combined,Las Vegas,Mexican,3
+Combined,Phoenix,American,1
+85004,Phoenix,American,3
+85004,Phoenix,Indian,3
+85006,Phoenix,Italian,2
+85006,Phoenix,Mexican,1
+85014,Phoenix,Chinese,3
+85015,Phoenix,Chinese,3
+85015,Phoenix,Mexican,3
+85016,Phoenix,American,3
+85017,Phoenix,American,3
+85017,Phoenix,Chinese,3
+85018,Phoenix,American,3
+85018,Phoenix,Italian,3
+85018,Phoenix,Japanese,3
+85021,Phoenix,American,2
+85021,Phoenix,Italian,3
+85021,Phoenix,Mexican,3
+85023,Phoenix,American,3
+85027,Phoenix,Mexican,3
+85028,Phoenix,Chinese,3
+85028,Phoenix,Italian,3
+85029,Phoenix,Italian,3
+85032,Phoenix,Chinese,3
+85032,Phoenix,Italian,1
+85033,Phoenix,Mexican,2
+85034,Phoenix,Mexican,2
+85040,Phoenix,American,3
+85040,Phoenix,Chinese,3
+85040,Phoenix,Italian,3
+85042,Phoenix,American,3
+85042,Phoenix,Chinese,3
+85042,Phoenix,Italian,3
+85048,Phoenix,Mexican,2
+85051,Phoenix,Mexican,3
+85054,Phoenix,Asian_Fusion,3
+89102,Las Vegas,American,2
+89102,Las Vegas,Mediterranean,2
+89102,Las Vegas,Vietnamese,3
+89103,Las Vegas,American,3
+89104,Las Vegas,American,3
+89107,Las Vegas,Italian,3
+89108,Las Vegas,American,3
+89108,Las Vegas,Chinese,3
+89108,Las Vegas,Mexican,3
+89109,Las Vegas,Japanese,3
+89109,Las Vegas,Mexican,3
+89110,Las Vegas,American,3
+89110,Las Vegas,Mexican,1
+89110,Las Vegas,Spanish,3
+89119,Las Vegas,Chinese,1
+89119,Las Vegas,Italian,3
+89119,Las Vegas,Mediterranean,3
+89120,Las Vegas,Mexican,3
+89121,Las Vegas,American,3
+89121,Las Vegas,Mexican,3
+89122,Las Vegas,Chinese,3
+89122,Las Vegas,Italian,3
+89128,Las Vegas,Mexican,3
+89129,Las Vegas,American,1
+89129,Las Vegas,Mexican,3
+89130,Las Vegas,American,3
+89130,Las Vegas,Italian,3
+89130,Las Vegas,Mexican,3
+89131,Las Vegas,Mexican,3
+89135,Las Vegas,Chinese,1
+89139,Las Vegas,American,3
+89139,Las Vegas,Mexican,3
+89141,Las Vegas,Mexican,3
+89147,Las Vegas,Italian,3
+89148,Las Vegas,American,3
+89148,Las Vegas,Italian,1
+89148,Las Vegas,Mexican,3
+89169,Las Vegas,American,3
+89169,Las Vegas,Japanese,3
+89183,Las Vegas,Mexican,3
+Combined,Las Vegas,Chinese,3
+Combined,Las Vegas,Italian,3
+Combined,Las Vegas,Mediterranean,3
+Combined,Phoenix,Chinese,3
+Combined,Phoenix,Italian,3
+85003,Phoenix,Asian_Fusion,3
+85004,Phoenix,Asian_Fusion,2
+85008,Phoenix,American,3
+85008,Phoenix,Asian_Fusion,3
+85008,Phoenix,Chinese,3
+85008,Phoenix,Mexican,3
+85012,Phoenix,American,3
+85013,Phoenix,American,3
+85014,Phoenix,American,1
+85014,Phoenix,Japanese,3
+85015,Phoenix,Japanese,1
+85016,Phoenix,Mexican,3
+85017,Phoenix,Italian,3
+85017,Phoenix,Mexican,3
+85018,Phoenix,Chinese,3
+85018,Phoenix,Mexican,3
+85020,Phoenix,American,3
+85020,Phoenix,Asian_Fusion,1
+85020,Phoenix,Chinese,3
+85021,Phoenix,Chinese,1
+85022,Phoenix,American,3
+85022,Phoenix,Asian_Fusion,1
+85022,Phoenix,Mexican,2
+85023,Phoenix,Chinese,1
+85023,Phoenix,Mexican,3
+85027,Phoenix,American,3
+85027,Phoenix,Chinese,3
+85027,Phoenix,Indian,3
+85027,Phoenix,Italian,3
+85028,Phoenix,Mexican,3
+85029,Phoenix,Chinese,2
+85029,Phoenix,Mexican,3
+85032,Phoenix,American,1
+85033,Phoenix,Chinese,1
+85034,Phoenix,Asian_Fusion,3
+85035,Phoenix,Chinese,1
+85035,Phoenix,Mexican,3
+85035,Phoenix,Spanish,3
+85042,Phoenix,Mexican,3
+85044,Phoenix,American,3
+85044,Phoenix,Mexican,3
+85048,Phoenix,American,3
+85048,Phoenix,Chinese,3
+85048,Phoenix,Italian,2
+85050,Phoenix,American,3
+85050,Phoenix,Asian_Fusion,3
+85050,Phoenix,Italian,3
+85050,Phoenix,Mexican,3
+85051,Phoenix,American,3
+85051,Phoenix,Chinese,3
+85051,Phoenix,Italian,3
+85051,Phoenix,Mediterranean,3
+85053,Phoenix,American,3
+85053,Phoenix,Italian,3
+85085,Phoenix,American,3
+85085,Phoenix,Chinese,3
+85085,Phoenix,Mexican,3
+89101,Las Vegas,American,3
+89102,Las Vegas,Mexican,3
+89103,Las Vegas,Asian_Fusion,2
+89103,Las Vegas,Italian,3
+89103,Las Vegas,Mexican,3
+89107,Las Vegas,Mexican,3
+89109,Las Vegas,French,3
+89109,Las Vegas,Vietnamese,2
+89113,Las Vegas,American,3
+89113,Las Vegas,Mexican,2
+89115,Las Vegas,American,3
+89115,Las Vegas,Mexican,2
+89115,Las Vegas,Vietnamese,3
+89117,Las Vegas,American,3
+89118,Las Vegas,American,2
+89118,Las Vegas,Chinese,3
+89118,Las Vegas,Italian,3
+89118,Las Vegas,Mexican,2
+89119,Las Vegas,Others,2
+89121,Las Vegas,Chinese,3
+89122,Las Vegas,American,3
+89122,Las Vegas,Mexican,3
+89123,Las Vegas,American,2
+89123,Las Vegas,Chinese,3
+89123,Las Vegas,Hawaiian,3
+89123,Las Vegas,Italian,3
+89123,Las Vegas,Mexican,3
+89128,Las Vegas,American,3
+89128,Las Vegas,Chinese,3
+89128,Las Vegas,Japanese,2
+89129,Las Vegas,Chinese,2
+89130,Las Vegas,Chinese,2
+89131,Las Vegas,American,2
+89134,Las Vegas,American,2
+89134,Las Vegas,Mexican,3
+89135,Las Vegas,American,2
+89135,Las Vegas,Mexican,2
+89139,Las Vegas,Chinese,3
+89139,Las Vegas,Italian,3
+89141,Las Vegas,American,3
+89141,Las Vegas,Italian,3
+89145,Las Vegas,American,3
+89145,Las Vegas,Mexican,2
+89146,Las Vegas,American,3
+89146,Las Vegas,Korean,3
+89146,Las Vegas,Mexican,2
+89147,Las Vegas,American,3
+89147,Las Vegas,Mexican,3
+89149,Las Vegas,Mexican,2
+89169,Las Vegas,Mexican,2
+89183,Las Vegas,Chinese,2
+Combined,Las Vegas,Japanese,3
+Combined,Phoenix,Asian_Fusion,3
+85003,Phoenix,American,3
+85003,Phoenix,Chinese,2
+85003,Phoenix,Mediterranean,2
+85003,Phoenix,Mexican,3
+85004,Phoenix,Italian,2
+85006,Phoenix,American,3
+85006,Phoenix,Chinese,3
+85008,Phoenix,Others,3
+85012,Phoenix,Italian,3
+85012,Phoenix,Japanese,3
+85012,Phoenix,Mexican,3
+85013,Phoenix,Chinese,3
+85014,Phoenix,Mediterranean,3
+85014,Phoenix,Mexican,3
+85016,Phoenix,Greek,3
+85016,Phoenix,Japanese,3
+85018,Phoenix,Asian_Fusion,3
+85018,Phoenix,Hawaiian,3
+85020,Phoenix,Italian,3
+85020,Phoenix,Mexican,3
+85022,Phoenix,Chinese,3
+85023,Phoenix,Japanese,3
+85027,Phoenix,Asian_Fusion,3
+85027,Phoenix,Hawaiian,3
+85029,Phoenix,American,3
+85029,Phoenix,Japanese,3
+85029,Phoenix,Korean,3
+85032,Phoenix,Asian_Fusion,3
+85032,Phoenix,Japanese,3
+85034,Phoenix,Chinese,3
+85034,Phoenix,French,3
+85034,Phoenix,Italian,3
+85042,Phoenix,Hawaiian,3
+85044,Phoenix,Italian,3
+85044,Phoenix,Japanese,3
+85048,Phoenix,Mediterranean,3
+85051,Phoenix,Asian_Fusion,3
+85053,Phoenix,Indian,3
+85054,Phoenix,American,3
+85085,Phoenix,Japanese,3
+89101,Las Vegas,Chinese,3
+89101,Las Vegas,Japanese,3
+89102,Las Vegas,Asian_Fusion,3
+89102,Las Vegas,Greek,3
+89102,Las Vegas,Italian,3
+89102,Las Vegas,Korean,3
+89103,Las Vegas,Chinese,4
+89103,Las Vegas,Vietnamese,3
+89104,Las Vegas,Chinese,3
+89107,Las Vegas,American,3
+89107,Las Vegas,Chinese,3
+89107,Las Vegas,Japanese,3
+89108,Las Vegas,Italian,3
+89109,Las Vegas,Hawaiian,3
+89109,Las Vegas,Indian,3
+89109,Las Vegas,Korean,3
+89109,Las Vegas,Mediterranean,3
+89109,Las Vegas,Thai,3
+89110,Las Vegas,Chinese,3
+89110,Las Vegas,Italian,3
+89113,Las Vegas,Chinese,3
+89113,Las Vegas,Italian,3
+89113,Las Vegas,Thai,3
+89115,Las Vegas,Chinese,3
+89117,Las Vegas,Asian_Fusion,3
+89117,Las Vegas,Chinese,3
+89117,Las Vegas,French,3
+89117,Las Vegas,Italian,3
+89119,Las Vegas,Hawaiian,3
+89120,Las Vegas,American,3
+89121,Las Vegas,Asian_Fusion,3
+89121,Las Vegas,Hawaiian,3
+89123,Las Vegas,Asian_Fusion,3
+89123,Las Vegas,Japanese,3
+89123,Las Vegas,Mediterranean,3
+89128,Las Vegas,Hawaiian,3
+89128,Las Vegas,Italian,3
+89128,Las Vegas,Vietnamese,3
+89129,Las Vegas,Italian,3
+89131,Las Vegas,Chinese,3
+89131,Las Vegas,Italian,3
+89131,Las Vegas,Thai,3
+89134,Las Vegas,Chinese,3
+89135,Las Vegas,Hawaiian,3
+89135,Las Vegas,Italian,3
+89139,Las Vegas,Asian_Fusion,3
+89139,Las Vegas,Hawaiian,3
+89139,Las Vegas,Vietnamese,3
+89141,Las Vegas,Chinese,3
+89146,Las Vegas,Chinese,3
+89146,Las Vegas,Hawaiian,3
+89147,Las Vegas,Chinese,3
+89147,Las Vegas,Japanese,3
+89147,Las Vegas,Thai,3
+89149,Las Vegas,American,3
+89149,Las Vegas,Chinese,3
+89149,Las Vegas,French,3
+89149,Las Vegas,Italian,3
+89169,Las Vegas,Asian_Fusion,3
+Combined,Las Vegas,Thai,3
+Combined,Phoenix,Japanese,3
+85003,Phoenix,Greek,3
+85003,Phoenix,Japanese,3
+85003,Phoenix,Korean,3
+85003,Phoenix,Thai,3
+85004,Phoenix,British,3
+85004,Phoenix,Greek,3
+85004,Phoenix,Japanese,3
+85004,Phoenix,Thai,3
+85004,Phoenix,Vietnamese,3
+85006,Phoenix,Indian,3
+85006,Phoenix,Vietnamese,3
+85008,Phoenix,Indian,3
+85008,Phoenix,Italian,3
+85012,Phoenix,British,3
+85012,Phoenix,Chinese,3
+85012,Phoenix,Thai,3
+85013,Phoenix,Thai,3
+85014,Phoenix,Asian_Fusion,3
+85014,Phoenix,Italian,3
+85015,Phoenix,American,3
+85015,Phoenix,Hawaiian,3
+85016,Phoenix,Asian_Fusion,3
+85016,Phoenix,Hawaiian,3
+85016,Phoenix,Mediterranean,3
+85017,Phoenix,Asian_Fusion,3
+85018,Phoenix,Greek,3
+85018,Phoenix,Thai,3
+85020,Phoenix,Greek,4
+85021,Phoenix,Greek,0
+85021,Phoenix,Indian,0
+85022,Phoenix,British,0
+85022,Phoenix,Korean,0
+85023,Phoenix,Italian,0
+85027,Phoenix,Vietnamese,0
+85028,Phoenix,American,0
+85032,Phoenix,Thai,0
+85034,Phoenix,Hawaiian,0
+85034,Phoenix,Japanese,0
+85034,Phoenix,Mediterranean,0
+85040,Phoenix,Greek,0
+85042,Phoenix,Asian_Fusion,0
+85044,Phoenix,Asian_Fusion,0
+85044,Phoenix,Mediterranean,0
+85048,Phoenix,Asian_Fusion,0
+85050,Phoenix,Mediterranean,0
+85051,Phoenix,Korean,0
+85053,Phoenix,Chinese,0
+85053,Phoenix,Thai,0
+85054,Phoenix,Italian,0
+85054,Phoenix,Japanese,0
+85054,Phoenix,Korean,0
+85054,Phoenix,Mexican,0
+85054,Phoenix,Others,0
+85085,Phoenix,Asian_Fusion,0
+85085,Phoenix,Italian,0
+85085,Phoenix,Mediterranean,0
+89101,Las Vegas,Asian_Fusion,0
+89101,Las Vegas,Italian,0
+89101,Las Vegas,Mediterranean,0
+89102,Las Vegas,Hawaiian,0
+89102,Las Vegas,Japanese,0
+89102,Las Vegas,Thai,0
+89103,Las Vegas,French,0
+89103,Las Vegas,Indian,0
+89103,Las Vegas,Thai,0
+89104,Las Vegas,Asian_Fusion,0
+89104,Las Vegas,Japanese,0
+89104,Las Vegas,Thai,0
+89108,Las Vegas,Asian_Fusion,0
+89109,Las Vegas,British,0
+89109,Las Vegas,Others,0
+89109,Las Vegas,Spanish,0
+89110,Las Vegas,Asian_Fusion,0
+89110,Las Vegas,Thai,0
+89113,Las Vegas,Indian,0
+89117,Las Vegas,Greek,0
+89117,Las Vegas,Japanese,0
+89117,Las Vegas,Mediterranean,0
+89117,Las Vegas,Thai,0
+89118,Las Vegas,Asian_Fusion,0
+89118,Las Vegas,Japanese,0
+89118,Las Vegas,Thai,0
+89119,Las Vegas,British,0
+89119,Las Vegas,Greek,0
+89119,Las Vegas,Indian,0
+89119,Las Vegas,Japanese,0
+89119,Las Vegas,Thai,0
+89119,Las Vegas,Vietnamese,0
+89120,Las Vegas,Chinese,0
+89120,Las Vegas,Hawaiian,0
+89120,Las Vegas,Spanish,0
+89120,Las Vegas,Thai,0
+89122,Las Vegas,Vietnamese,0
+89123,Las Vegas,Korean,0
+89123,Las Vegas,Vietnamese,0
+89128,Las Vegas,French,0
+89129,Las Vegas,Greek,0
+89129,Las Vegas,Japanese,0
+89129,Las Vegas,Spanish,0
+89130,Las Vegas,Asian_Fusion,0
+89130,Las Vegas,Hawaiian,0
+89130,Las Vegas,Japanese,0
+89131,Las Vegas,Hawaiian,0
+89131,Las Vegas,Mediterranean,0
+89134,Las Vegas,Greek,0
+89134,Las Vegas,Italian,0
+89135,Las Vegas,Asian_Fusion,0
+89135,Las Vegas,Japanese,0
+89139,Las Vegas,Japanese,0
+89139,Las Vegas,Mediterranean,0
+89139,Las Vegas,Thai,0
+89141,Las Vegas,Japanese,0
+89145,Las Vegas,Asian_Fusion,0
+89145,Las Vegas,Chinese,0
+89145,Las Vegas,Hawaiian,0
+89145,Las Vegas,Italian,0
+89145,Las Vegas,Japanese,0
+89145,Las Vegas,Thai,0
+89146,Las Vegas,Asian_Fusion,0
+89146,Las Vegas,Spanish,0
+89146,Las Vegas,Thai,0
+89146,Las Vegas,Vietnamese,0
+89147,Las Vegas,Hawaiian,0
+89147,Las Vegas,Vietnamese,0
+89148,Las Vegas,Chinese,0
+89148,Las Vegas,Thai,0
+89148,Las Vegas,Vietnamese,0
+89149,Las Vegas,Hawaiian,0
+89149,Las Vegas,Japanese,0
+89169,Las Vegas,Chinese,0
+89169,Las Vegas,Indian,0
+89183,Las Vegas,American,0
+89183,Las Vegas,Asian_Fusion,0
+89183,Las Vegas,Hawaiian,0
+89183,Las Vegas,Italian,0
+89183,Las Vegas,Thai,0
+Combined,Las Vegas,Asian_Fusion,0
+Combined,Las Vegas,British,0
+Combined,Las Vegas,Hawaiian,0
+Combined,Las Vegas,Korean,0
+Combined,Phoenix,Mediterranean,0
+85003,Phoenix,British,0
+85003,Phoenix,Hawaiian,0
+85006,Phoenix,Mediterranean,0
+85012,Phoenix,Asian_Fusion,0
+85012,Phoenix,Hawaiian,0
+85012,Phoenix,Mediterranean,0
+85013,Phoenix,French,0
+85013,Phoenix,Greek,0
+85013,Phoenix,Indian,0
+85013,Phoenix,Italian,0
+85013,Phoenix,Japanese,0
+85013,Phoenix,Mediterranean,0
+85015,Phoenix,Asian_Fusion,0
+85015,Phoenix,Greek,0
+85015,Phoenix,Vietnamese,0
+85016,Phoenix,French,0
+85016,Phoenix,Indian,0
+85017,Phoenix,Vietnamese,0
+85018,Phoenix,French,0
+85018,Phoenix,Mediterranean,0
+85018,Phoenix,Vietnamese,0
+85020,Phoenix,Mediterranean,0
+85021,Phoenix,Japanese,0
+85021,Phoenix,Mediterranean,0
+85021,Phoenix,Thai,0
+85022,Phoenix,Indian,0
+85022,Phoenix,Japanese,0
+85022,Phoenix,Mediterranean,0
+85022,Phoenix,Thai,0
+85023,Phoenix,Asian_Fusion,0
+85027,Phoenix,Greek,0
+85027,Phoenix,Japanese,0
+85028,Phoenix,Thai,0
+85032,Phoenix,Mediterranean,0
+85032,Phoenix,Vietnamese,0
+85033,Phoenix,Mediterranean,0
+85033,Phoenix,Spanish,0
+85040,Phoenix,Mediterranean,0
+85044,Phoenix,Chinese,0
+85044,Phoenix,Greek,0
+85048,Phoenix,Indian,0
+85048,Phoenix,Japanese,0
+85050,Phoenix,Japanese,0
+85051,Phoenix,Greek,0
+85053,Phoenix,Greek,0
+85054,Phoenix,Mediterranean,0
+85054,Phoenix,Vietnamese,0
+85085,Phoenix,Greek,0
+89101,Las Vegas,Hawaiian,0
+89101,Las Vegas,Thai,0
+89102,Las Vegas,Indian,0
+89102,Las Vegas,Spanish,0
+89103,Las Vegas,Greek,0
+89103,Las Vegas,Hawaiian,0
+89103,Las Vegas,Mediterranean,0
+89103,Las Vegas,Spanish,0
+89104,Las Vegas,French,0
+89104,Las Vegas,Hawaiian,0
+89104,Las Vegas,Italian,0
+89104,Las Vegas,Korean,0
+89108,Las Vegas,Thai,0
+89109,Las Vegas,Greek,0
+89113,Las Vegas,Hawaiian,0
+89113,Las Vegas,Japanese,0
+89115,Las Vegas,Korean,0
+89117,Las Vegas,Indian,0
+89117,Las Vegas,Korean,0
+89117,Las Vegas,Vietnamese,0
+89118,Las Vegas,Greek,0
+89118,Las Vegas,Vietnamese,0
+89119,Las Vegas,French,0
+89120,Las Vegas,Asian_Fusion,0
+89120,Las Vegas,Japanese,0
+89120,Las Vegas,Mediterranean,0
+89121,Las Vegas,Japanese,0
+89121,Las Vegas,Thai,0
+89121,Las Vegas,Vietnamese,0
+89122,Las Vegas,Japanese,0
+89123,Las Vegas,Greek,0
+89123,Las Vegas,Thai,0
+89128,Las Vegas,Asian_Fusion,0
+89128,Las Vegas,Greek,0
+89128,Las Vegas,Mediterranean,0
+89128,Las Vegas,Spanish,0
+89129,Las Vegas,Indian,0
+89129,Las Vegas,Thai,0
+89130,Las Vegas,Greek,0
+89130,Las Vegas,Thai,0
+89131,Las Vegas,Asian_Fusion,0
+89134,Las Vegas,Japanese,0
+89134,Las Vegas,Thai,0
+89135,Las Vegas,Mediterranean,0
+89139,Las Vegas,Korean,0
+89141,Las Vegas,Spanish,0
+89146,Las Vegas,Greek,0
+89146,Las Vegas,Indian,0
+89146,Las Vegas,Italian,0
+89146,Las Vegas,Japanese,0
+89146,Las Vegas,Mediterranean,0
+89147,Las Vegas,Asian_Fusion,0
+89147,Las Vegas,Indian,0
+89148,Las Vegas,Asian_Fusion,0
+89148,Las Vegas,French,0
+89148,Las Vegas,Greek,0
+89148,Las Vegas,Hawaiian,0
+89148,Las Vegas,Mediterranean,0
+89149,Las Vegas,Asian_Fusion,0
+89149,Las Vegas,Greek,0
+89169,Las Vegas,Thai,0
+89183,Las Vegas,Greek,0
+89183,Las Vegas,Japanese,0
+Combined,Las Vegas,Greek,0
+Combined,Las Vegas,Indian,0
+Combined,Las Vegas,Vietnamese,0
+Combined,Phoenix,Vietnamese,0
+85003,Phoenix,Italian,0
+85004,Phoenix,Hawaiian,0
+85013,Phoenix,Hawaiian,0
+85013,Phoenix,Vietnamese,0
+85014,Phoenix,Others,0
+85016,Phoenix,Thai,0
+85020,Phoenix,Thai,0
+85021,Phoenix,Hawaiian,0
+85023,Phoenix,Greek,0
+85023,Phoenix,Hawaiian,0
+85023,Phoenix,Vietnamese,0
+85032,Phoenix,Greek,0
+85034,Phoenix,Greek,0
+85035,Phoenix,Thai,0
+85040,Phoenix,Thai,0
+85044,Phoenix,Hawaiian,0
+85048,Phoenix,Greek,0
+85048,Phoenix,Thai,0
+85051,Phoenix,Japanese,0
+85054,Phoenix,Indian,0
+89101,Las Vegas,British,0
+89101,Las Vegas,Indian,0
+89104,Las Vegas,British,0
+89104,Las Vegas,Others,0
+89107,Las Vegas,Asian_Fusion,0
+89107,Las Vegas,Hawaiian,0
+89107,Las Vegas,Korean,0
+89107,Las Vegas,Mediterranean,0
+89107,Las Vegas,Thai,0
+89108,Las Vegas,Japanese,0
+89110,Las Vegas,Japanese,0
+89110,Las Vegas,Mediterranean,0
+89113,Las Vegas,Asian_Fusion,0
+89113,Las Vegas,French,0
+89113,Las Vegas,Korean,0
+89115,Las Vegas,Thai,0
+89118,Las Vegas,French,0
+89119,Las Vegas,Korean,0
+89121,Las Vegas,Mediterranean,0
+89128,Las Vegas,Thai,0
+89130,Las Vegas,Mediterranean,0
+89139,Las Vegas,Greek,0
+89145,Las Vegas,Mediterranean,0
+89146,Las Vegas,French,0
+89147,Las Vegas,French,0
+89147,Las Vegas,Greek,0
+89147,Las Vegas,Mediterranean,0
+89148,Las Vegas,Indian,0
+89148,Las Vegas,Japanese,0
+89149,Las Vegas,Indian,0
+89169,Las Vegas,Mediterranean,0
+89169,Las Vegas,Spanish,0
+89183,Las Vegas,Indian,0
+89183,Las Vegas,Mediterranean,0
+Combined,Las Vegas,French,0
+Combined,Phoenix,Greek,0
+Combined,Phoenix,Hawaiian,0
+85029,Phoenix,Thai,0
+89103,Las Vegas,Others,0
+89121,Las Vegas,Spanish,0
+Combined,Phoenix,Spanish,0
