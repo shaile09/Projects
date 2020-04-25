@@ -129,7 +129,8 @@ For the dataset that we are using with ethnic type and city as our categorical d
 Benefits – It is easier to implement, interpret and very efficient to train. It gives an easy measure of how relevant a predictor is and it’s direction of association (positive or negative).
 Limitations – It cannot solve non-linear problems.  It heavily relies on a proper presentation of your data. This means that logistic regression is not a useful tool unless you have already identified all the important independent variables. Since its outcome is discrete, Logistic Regression can only predict a categorical outcome. It is also an Algorithm that is known for its vulnerability to overfitting.
 The accuracy rate in our analysis using this model is still 30%, which shows that the data is underfitting.
-
+ 
+# Dashboard and Analysis
 
 #### Description of the Tools 
 To support our investor (Bill), we will be using Tableau to complete an analysis of the cleaned data sets of business and reviews datasets. As Bill is thinking about opening a restaurant, we need to provide him a tool that is interactive and very easy to use. To start, we will provide him with the number of distinct businesses that are in Phoenix and Las Vegas. Using the two datasets, we will complete the following analysis:
