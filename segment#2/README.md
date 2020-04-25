@@ -170,3 +170,16 @@ Linear Regression, Deep Learning, and Random Forest Classifier are the machine l
 Tableau is the application we will be using to display our data. We feel that tableau will give the user the most simplest way of looking at which location geographically is best when considering location and type of restaurant to open. It will include comparable data, such as what type of restaurant it is, whether it got a good or a bad rating, and exactly where it is located.
 =======
 
+#### Description of the Tools 
+To support our investor (Bill), we will be using Tableau to complete an analysis of the cleaned data sets of business and reviews datasets. As Bill is thinking about opening a restaurant, we need to provide him a tool that is interactive and very easy to use. To start, we will provide him with the number of distinct businesses that are in Phoenix and Las Vegas. Using the two datasets, we will complete the following analysis:
+- Star rating of restaurants 
+- Category of restaurants that are available 
+- Comparison of the total review by type and postal code 
+- City and postal code star rating 
+- Prediction of stars by postal code 
+- Prediction of future reviews by stars 
+Using the Tableau platform, Bill will be able to interact with the dashboard and filter by postal code and category. In addition, we will create and style worksheets, dashboards, and stories, use worksheets to display data in a professional way, portray data accurately using dashboards.
+#### Interactive Element of Tableau 
+Tableau desktop provides analysts to create an interactive dashboard to allow users to search by various elements. The interactive element will help Bill to look at the data in various ways by filtering searching by various elements. This includes searching by which restaurants have the highest stars, categories that have highest stars, postal codes that have the highest stars, etc.
+
+
