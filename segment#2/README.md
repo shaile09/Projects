@@ -119,19 +119,25 @@ After our initial attempts to use Yelp API, we found issues with importing the Y
 -	Initially, we started with Linear Regression Model and soon realized that we can only use this model when there are continuous values to be predicted. For categorical data prediction, Logistics Regression Model should be used.
 -	Our goal is to predict the star rating, hence our attempts to find the models that could fit our output as well. While analyzing each Machine Learning model that we have tested, our Random Forest and Deep Learning samples seemed to be closer to our requirements.
 ## How was the data split into training and testing sets?
-The training and testing datasets were divided with 67% going towards training and 33% going towards testing. 
+-	The training and testing datasets were divided with 67% going towards training and 33% going towards testing. 
 ## What was our model’s accuracy? What were the limitations and benefits of each model we chose?
 ### Deep Learning
 Benefits – An advantage is its capacity to execute feature engineering on its own. A deep learning algorithm will scan the data to search for features that correlate and combine them to enable faster learning without being explicitly told to do so. Another advantage is they produce the best results with unstructured data. Most company’s data is unstructured because of the different formats they all come in from. Unstructured data is hard to analyze for most machine learning models. Deep learning algorithms can be trained using different data formats, and still deliver good insight that is relevant to the purpose of its training.
+
 Limitations – It needs a large dataset to go through to predict the best outcomes, just like the human brain needs a lot of experiences to learn and deduce information before making any decisions. Overfitting is also another negative for the Deep Learning Model as it can train the data too well. Overtraining is a problem in neural networks. You can tell when a model is overtrained when the accuracy % stops improving after a certain number of epochs and flattens out.
+
 For the dataset that we are using with ethnic type and city as our categorical data, our accuracy so far is around 20%. The challenge that we think is that we are trying to train the entire dataset just with category and number of reviews per rating. This makes the dataset small per category for it to be trained.
 ### Random Forest Classifier
 Benefits – There is very little pre-processing that needs to be done. The data usually does not need to be rescaled or transformed. Predictions and training speeds are much quicker.
+
 Limitations – For large datasets, they take up a lot of memory. They also tend to overfit.
+
 For the dataset that we are using with ethnic type and city as our categorical data, our accuracy so far is around 20%. The challenge that we think is that we are trying to train the entire dataset just with category and number of reviews per rating. This makes the dataset limited per category for it to be trained.
 ### Logistic Regression
 Benefits – It is easier to implement, interpret and very efficient to train. It gives an easy measure of how relevant a predictor is and it’s direction of association (positive or negative).
+
 Limitations – It cannot solve non-linear problems.  It heavily relies on a proper presentation of your data. This means that logistic regression is not a useful tool unless you have already identified all the important independent variables. Since its outcome is discrete, Logistic Regression can only predict a categorical outcome. It is also an Algorithm that is known for its vulnerability to overfitting.
+
 The accuracy rate in our analysis using this model is still 30%, which shows that the data is underfitting.
  
 # Dashboard and Analysis
