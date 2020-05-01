@@ -18,6 +18,12 @@
 	 - Worked on creating Machine Learning Model.
 	 - Worked on creating Google Slides for the project description.
 	 - Developed a protype of the data anytics dashaboard (Tabluea)
+ - Segment 3
+ 	 - Met on Tuesday, Thursday and Saturday as a group.
+	 - Communicated through SLack group chat and Zoom Saturday meeting outside class time.
+	 - Worked on completing and finalizing Machine Learning Model.
+	 - Worked on Google Slides for the presentation
+	 - Worked on Tabluea Dashboard
 	
 =======
 # Project Overview
@@ -53,6 +59,12 @@ We are hoping to answer the following questions:
 - Predictive of the restaurant stars based on postal code
 - Predict future reviews for a new restaurant based on the available data
 - Predict what restaurant to open where
+
+# Third Segment
+
+## Presentation link - https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p
+
+
 
 # Second Segment
 
