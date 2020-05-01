@@ -1,38 +1,13 @@
 # Final Project 
 
-
-# Team's Communication Protocols
-
- - Our team mainly communicates and will communicate through Slack and Zoom meetings. 
- - Will meet during the week to work on the project either whole group or small groups other than classtime
- - Will also work individually to complete certain aspects of the project.
- - Segment 1 
-          - Met several times (more than two times) outside class time to work on the project.
-          - Worked on choosing the topic for the project and finding the dataset. 
-          - Worked on import the dataset into a pandas dataframe.
-          - Worked on deciding what technologies to use.
- - Segment 2
-         - Met on Tuesdays, Thursdays and Saturdays as a group.
-	 - Communicated through Slack group chat and Zoom meetings outside class time.
-	 - Worked on the preprocessing the dataset for Machine Learing Model and Visualazation.
-	 - Worked on creating Machine Learning Model.
-	 - Worked on creating Google Slides for the project description.
-	 - Developed a protype of the data anytics dashaboard (Tabluea)
- - Segment 3
- 	 - Met on Tuesday, Thursday and Saturday as a group.
-	 - Communicated through SLack group chat and Zoom Saturday meeting outside class time.
-	 - Worked on completing and finalizing Machine Learning Model.
-	 - Worked on Google Slides for the presentation
-	 - Worked on Tabluea Dashboard
-	
 =======
 # Project Overview
 
  - Bill (an investor) went to work to visit Phoenix and Las Vegas for a few days and he really liked the restaurant options that are available since he is interested in opening a restaurant business himself in either Phoenix or Las Vegas .  
  - In the few days he was in both cities, he was using the Yelp to choose different restaurants near his hotels. Bill is thinking about opening a restaurant in either Las Vegas or Phoenix as there is a lot of variations of food. Before he opens a restaurant, he is interested in learning more what types of restaurants are in these cities, what are the yelp stars, and additional details that would help him make a decision where to open restaurant.
-
-
-## Description of the source of data
+ 
+=======
+# Description of the source of data
 
  - The team found a dataset on Kaggle.com to conduct this analysis - https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2
  - From the data set will be using business data
@@ -60,15 +35,43 @@ We are hoping to answer the following questions:
 - Predict future reviews for a new restaurant based on the available data
 - Predict what restaurant to open where
 
-# Third Segment
+=======
+# Third Segment - Outline
+	- requirement.txt added to Github that includes the 
 
 ## Presentation link - https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p
 
+## ETL / Preprocessing of the Yelp Data
+	- Completed during segment 2 and the outline is under the segement 2 outline. The preprocessing steps are also outlined in the 	Google Slides (slides 9 and 10).
+	
+## Machine Learning Model
+	- The detailed outline for the machine learning model is in the segment 2 outline.
+		- During segment 2 we used Deep Learning model, Random Forest Classifier and Logistic Regression. However, the accuracy score for these models did not exceed 30%.
+	- During segment 3 we used Random Forest Regressor, which has worked with our dataset as the accuracy score has increesed to 95%. 
+	- NEED MORE DETAILS
 
+## Dashboard - Tableau
+	- Link to Tableau Dashbouard - https://public.tableau.com/profile/seghen7339#!/vizhome/Workbook_FinalProject_test2/Story1?publish=yes
+	- Each Dashboard slide has an interactive component where the user can choose to display data either by city, postal_code or restaurant category (ethnic_type). 
+	- Dashboard: 
+		- shows the total business counts for Las Vegas (2455) and Phoenix (1557). 
+		- shows that Las Vegas restaurants have higher rating that Phoenix as there are more restaurants in the area.
+		- shows that Las Vegas and Pheonix have similar outcomes when compared by the ethnic type.
+		- shows a tree map by postal code, where postal code 89109 has a higher ratings.
+		- shows comparison between machine learning model prediction and the original dataset, where the results show similar conclusions. 
+		- shows stars data from the original dataset by ethnic_type.
+		- The results show that ethnic_type American has the most rating - it is also because our dataset includes more American restaurants that other ethnic_types.
+		
+### Dashboard Images
 
-# Second Segment
+![]( https://github.com/ebskii52/finalProject2020/blob/knar/DashboardImage.PNG)
 
-# Presentation link - https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p
+![]( https://github.com/ebskii52/finalProject2020/blob/knar/DashboardImage1.PNG)
+
+		
+# Second Segment - Outline
+
+## Presentation link - https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p
 
 
 ## ETL / Prepocessing of the Yelp Data.
@@ -170,8 +173,7 @@ Tableau desktop provides analysts to create an interactive dashboard to allow us
 
 
 
-
-# First Segment 
+# First Segment - Outline
 
 This week's project focused on the selecting a project idea. The goal of this week was to decide on our overall project, selecting your question, building a model, finding a dataset, using a database using CSV or JSON files to prototype our idea. In this segment, we began by gathering a project team to help support the project.
 
@@ -241,5 +243,29 @@ Linear Regression, Deep Learning, and Random Forest Classifier are the machine l
 #### Dashboard
 
 Tableau is the application we will be using to display our data. We feel that tableau will give the user the most simplest way of looking at which location geographically is best when considering location and type of restaurant to open. It will include comparable data, such as what type of restaurant it is, whether it got a good or a bad rating, and exactly where it is located.
+
+### Team's Communication Protocols
+
+ - Our team mainly communicates and will communicate through Slack and Zoom meetings. 
+ - Will meet during the week to work on the project either whole group or small groups other than classtime
+ - Will also work individually to complete certain aspects of the project.
+ - Segment 1 
+          - Met several times (more than two times) outside class time to work on the project.
+          - Worked on choosing the topic for the project and finding the dataset. 
+          - Worked on import the dataset into a pandas dataframe.
+          - Worked on deciding what technologies to use.
+ - Segment 2
+         - Met on Tuesdays, Thursdays and Saturdays as a group.
+	 - Communicated through Slack group chat and Zoom meetings outside class time.
+	 - Worked on the preprocessing the dataset for Machine Learing Model and Visualazation.
+	 - Worked on creating Machine Learning Model.
+	 - Worked on creating Google Slides for the project description.
+	 - Developed a protype of the data anytics dashaboard (Tabluea)
+ - Segment 3
+ 	 - Met on Tuesday, Thursday and Saturday as a group.
+	 - Communicated through SLack group chat and Zoom Saturday meeting outside class time.
+	 - Worked on completing and finalizing Machine Learning Model.
+	 - Worked on Google Slides for the presentation
+	 - Worked on Tabluea Dashboard
 
 
