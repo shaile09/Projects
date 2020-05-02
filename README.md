@@ -96,7 +96,8 @@ After our initial attempts to use Yelp API, we found issues with importing the Y
 -	We imported StandardScaler and get_dummies. The StandardScaler is needed to transform the data so that it has a mean of 0 and a standard deviation of 1. The get_dummies is needed as it creates a binary column for each category type of restaurant.
 -	We've also imported train_test_split which will help us split our data for training and testing.
 -	Further in the analysis process, we then added another column, which showed a prediction of star ratings, which were the review ratings on the graded scale of 0-5 stars on how satisfied customers were for each restaurant/business.
-Description of preliminary feature engineering and preliminary feature selection, including their decision making process
+
+#### Description of preliminary feature engineering and preliminary feature selection, including their decision making process
 -	Initially, we started with Linear Regression Model as one of the 3 models we wanted to test and soon realized that we can only use this model when there are continuous values to be predicted. For categorical data prediction, Logistics Regression Model should be used. After poor results from Logistics Regression Model, our professor suggested to go back and use Linear Regression Model. This still ran into issues with this.
 -	Our goal is to predict the star rating, hence our attempts to find the models that could fit our output as well. While analyzing each Machine Learning model that we have tested, our Random Forest and Deep Learning samples seemed to be closer to our requirements.
 How was the data split into training and testing sets?
@@ -107,6 +108,7 @@ What was our model’s accuracy? What were the limitations and benefits of each 
 Benefits – An advantage is its capacity to execute feature engineering on its own. A deep learning algorithm will scan the data to search for features that correlate and combine them to enable faster learning without being explicitly told to do so. Another advantage is they produce the best results with unstructured data. Most company’s data is unstructured because of the different formats they all come in from. Unstructured data is hard to analyze for most machine learning models. Deep learning algorithms can be trained using different data formats, and still deliver good insight that is relevant to the purpose of its training.
 
 Limitations – It needs a large dataset to go through to predict the best outcomes, just like the human brain needs a lot of experiences to learn and deduce information before making any decisions. Overfitting is also another negative for the Deep Learning Model as it can train the data too well. Overtraining is a problem in neural networks. You can tell when a model is overtrained when the accuracy % stops improving after a certain number of epochs and flattens out.
+
 For the dataset that we are using with ethnic type and city as our categorical data, our accuracy stayed around 40%. We had thought maybe our dataset was too small, so we ran a test with fabricated data 3 times larger than our original data to see if that would make a difference, and the accuracy stayed around 40%. This machine learning model was not a success.
 
 #### Random Forest Classifier
@@ -121,6 +123,7 @@ For the dataset that we are using with ethnic type and city as our categorical d
 Benefits – It is easier to implement, interpret and very efficient to train. It gives an easy measure of how relevant a predictor is and it’s direction of association (positive or negative).
 
 Limitations – It cannot solve non-linear problems.  It heavily relies on a proper presentation of your data. This means that logistic regression is not a useful tool unless you have already identified all the important independent variables. Since its outcome is discrete, Logistic Regression can only predict a categorical outcome. It is also an Algorithm that is known for its vulnerability to overfitting.
+
 The accuracy rate in our analysis using this model is still 30%, which shows that the data is underfitting.
 
 #### Linear Regression
@@ -133,8 +136,7 @@ We attempted Linear Regression with X = zipcode and Y = review count or stars. W
 #### Random Forest Regressor
 After multiple attempts with all the other Machine Learning Models, and only achieving low accuracy scores, we tried Random Forest Regressor as per suggestion by our professor and teacher’s aid. This method gave a significantly better result at 90% accuracy. With every other machine learning model’s accuracy score being less than half of what we were able to achieve than with random forest regressor, it was a no brainer to move forward with this machine learning model.
 
-Regression algorithms attempt to estimate the mapping function from the input variables (x) to numerical or continuous output variables (y). In this case, y is star rating and hence a real value. This could be an integer or a floating point value. Initially we tried with classification model considering there are mulitple input values and the expected output as 1-2-3-4-5. We considered these as classifiers.
-But doing so the classifier was probably not distributing the weight correctly. Hence the accuracy could not get beyond 45%. On changing the model to consider the output as continuous variable, the accuracy score seems to have improved to around 90%
+Regression algorithms attempt to estimate the mapping function from the input variables (x) to numerical or continuous output variables (y). In this case, y is star rating and hence a real value. This could be an integer or a floating point value. Initially we tried with classification model considering there are multiple input values and the expected output as 1 through 5. We considered these as classifiers, but by doing so, the classifier was probably not distributing the weight correctly. This was why the accuracy could not get beyond 45%. Upon considering changing the model to include the output as continuous variable, the accuracy score seems to have improved to around 90%.
 
 To further improve on this model, we suggest the below:
 1.	Remove zipcode from the modeling
