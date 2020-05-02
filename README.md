@@ -41,8 +41,39 @@ We are hoping to answer the following questions:
 
 ## Presentation link - https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p
 
-## ETL / Preprocessing of the Yelp Data
-	- Completed during segment 2 and the outline is under the segement 2 outline. The preprocessing steps are also outlined in the 	Google Slides (slides 9 and 10).
+## # ETL / Prepocessing of the Yelp Data.
+
+- Import and analyze yelp businesses dataset.
+	- Opened business.json file and imported into a dataframe.
+	- The Yelp dataset includes data on different businesses other than restaurants.
+	- Filtered only open businesses and dropped columns that will not be used for the analysis (neighborhood, is_open).
+	- Counted how many values each state has:
+		- The result showed that Arizona and Nevada states have the most values, which indicates that we have enough data to do our analysis.
+	- Filtered out all the restaurant businesses based on category column into new dataframe.
+	- Explored to see how many unique categories of restaurants are in the dataset
+		- Created a new column, ethnic_type, to put all the categories needed for the analysis.
+		- Chose only 20 unique restaurant types:
+			- African, American, Asian_Fusion, British, Chinese, French, Greek, Hawaiian, Indian, Italian, Japanese, Korean, Mediterranean, Mexican, Middle_Eastern, Spanish, Thai, Vietnamese
+		- Explored the value count for the cities to see if we have enough data to do analysis for cities Phoenix and Las Vegas.
+			- Data shows we have 2455 business for Las Vegas and 1557 businesses for Phoenix.
+			- Dropped all the data except for Phoenix and Las Vegas.
+			- Created business_info dataframe to import the tables to posgres.
+- Import and analyze yelp reviews dataset.
+	- Opened review.json file and put the data into reviews_df dataframe.
+	- Merged reviews_df and business_info dataframes by business_id to select all the reviews that are matched with are selected businesses.
+	- Dropped rows with null values.
+	- Rename star_x column to restaurant_star and star_y to review_star as star_x is the restaurant rating from business table and star_y is the reviewers rating for the corresponding restaurant.
+	- Created business_reviews_df dataframe to import to posgres.
+	- Created a connection to SQL and imported the tables of the cleaned data into posgres.
+	- In addition, created csv files of the cleaned data.
+
+- Database
+	- Database stores business_info, business_reviews and review_prediction (machine_learning) tables.
+	- Yelp_db is used to pull from the database the business_reviews and business_info tables for machine learning.
+	- The  business_info and business_reviews are joined to create join within posgres. # Placeholder 
+	- Due to restrictions on the cost of AWS, we do not have shared databased, instead use local posgres database with same table schema (schema.sql) to acess the data.
+		- The sample database can be accessed at https://yelpdbbackup.s3.us-east-2.amazonaws.com/Yelp_db.sql. 
+
 	
 ## Machine Learning Model
 	- The detailed outline for the machine learning model is in the segment 2 outline.
