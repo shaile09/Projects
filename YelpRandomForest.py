@@ -10,6 +10,7 @@ from sqlalchemy import create_engine
 import numpy as np
 # Import library for Random Forest Regressor
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import confusion_matrix
 import os
 from config import db_password
 import sys
@@ -156,9 +157,10 @@ y_pred = rf_model.predict(X_test_scaled)
 
 # %%
 #Score found for random forest regressor
-out = rf_model.score(X_test_scaled,y_test)
-f.write("Accuracy Score"%out) 
-
+#Since this is a regression model, confusion matrix cannot be achived.
+out = rf_model.score(X_test_scaled,y_pred)
+f.write("\n Accuracy Score" + str(out)) 
+# print (out)
 
 # %%
 #Predictions for entire dataset with unique features
@@ -168,7 +170,6 @@ ynew = rf_model.predict(x_test_data_scaled)
 # %%
 #Score test data
 out=rf_model.score(x_test_data_scaled,ynew)
-f.write("Accuracy Score"%out) 
 
 
 # %%
@@ -191,9 +192,12 @@ except psycopg2.DatabaseError as error:
 #Create a .csv file
 try:
     reviewsForOutput.to_csv('review_prediction.csv')
-except 
-
+except IOError as error:
+    f.write("Review Predition file not found")   
+    f.close()
 
 # %%
 #File close
 f.close()
+
+# %%
