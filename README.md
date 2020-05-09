@@ -1,4 +1,4 @@
-# Final Project 
+# Final Project - Restaurant Types and Reviews 
 
 =======
 # Project Overview
@@ -36,7 +36,7 @@ We are hoping to answer the following questions:
 - Predict what restaurant to open where
 
 =======
-# Third Segment - Outline
+# Third Segment -  Outline
 	- requirement.txt added to Github that includes the packages used.
 
 ## Presentation link - https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p
