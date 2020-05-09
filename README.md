@@ -106,7 +106,8 @@ Parameters used n_estimators=50, max_depth=32, random_state=2.
 
 ## Dashboard - Tableau 
 [Link to Tableau Dashboard]( https://public.tableau.com/profile/seghen7339#!/vizhome/Workbook_FinalProject_test2/Story1?publish=yes)
-	- Each Dashboard slide has an interactive component where the user can choose to display data either by city, postal_code or restaurant category (ethnic_type). 
+	
+- Each Dashboard slide has an interactive component where the user can choose to display data either by city, postal_code or restaurant category (ethnic_type). 
 	- Dashboard: 
 		- shows the total business counts for Las Vegas (2455) and Phoenix (1557). 
 		- shows that Las Vegas restaurants have higher rating that Phoenix as there are more restaurants in the area.
