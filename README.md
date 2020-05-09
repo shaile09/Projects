@@ -37,7 +37,7 @@ We are hoping to answer the following questions:
 
 
 # Project Outline
-- All previous segment README submissions are in this [Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file. We updated main README to reflect our final project.
+- All previous segment README submissions are in this [Past README]( https://github.com/ebskii52/finalProject2020/blob/master/README%20from%20Segment%201-2-3.txt) file. We updated main README to reflect our final project.
 
 - requirement.txt added to Github that includes the packages used.
 - Softwares Used:
@@ -97,16 +97,16 @@ We are hoping to answer the following questions:
 		- The sample database can be accessed at [Sample Database]( https://yelpdbbackup.s3.us-east-2.amazonaws.com/Yelp_db.sql) 
 		
 ## Link to the ERD Model
-![]( https://github.com/ebskii52/finalProject2020/blob/knar/segment%232/ERD_schema.PNG)
+![]( https://github.com/ebskii52/finalProject2020/blob/master/ERD_schema.PNG)
 	
 ## Machine Learning Process - [YelpRandomForest.py]( https://github.com/ebskii52/finalProject2020/blob/master/YelpRandomForest.py)
 - Random Forest Classifier/Regressor - Little pre-processing needs to be done. The data usually does not need to be rescaled or transformed. Predictions and training speeds are much quicker. The main difference between the two is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).
 - Random Forest Regressor. Use average of all the branches to predict value. Used 1 to 5 as continuous values.
 The accuracy here came out to be around 90%. These were identified by gridSearchCV.
 Parameters used n_estimators=50, max_depth=32, random_state=2.
-- The various Machine Learning model were tested and analized and details are in [Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file.
+- The various Machine Learning model were tested and analized and details are in [Past README]( https://github.com/ebskii52/finalProject2020/blob/master/README%20from%20Segment%201-2-3.txt) file.
 - Considering the best accuracy rate achieved so far we decided to use Random Forest Regressor.
-- The full Machine Learning Analysis is in [Machine Learning Model Analysis]( https://github.com/ebskii52/finalProject2020/blob/justin1/Machine_Learning_Model_Analysis.docx) file.
+- The full Machine Learning Analysis is in [Machine Learning Model Analysis]( https://github.com/ebskii52/finalProject2020/blob/master/machine_learning_analysis.txt) file.
 
 #### ![Machine Learning Program Flow]( https://github.com/ebskii52/finalProject2020/blob/master/ML_ProgramFlow.PNG)
 
@@ -125,9 +125,9 @@ Parameters used n_estimators=50, max_depth=32, random_state=2.
 		
 ### Dashboard Images
 
-![]( https://github.com/ebskii52/finalProject2020/blob/knar/DashboardImage.PNG)
+![]( https://github.com/ebskii52/finalProject2020/blob/master/DashboardImage.PNG)
 
-![]( https://github.com/ebskii52/finalProject2020/blob/knar/DashboardImage1.PNG)
+![]( https://github.com/ebskii52/finalProject2020/blob/master/DashboardImage1.PNG)
 
 ### Dashboard and Analysis
 
