@@ -102,6 +102,8 @@ Parameters used n_estimators=50, max_depth=32, random_state=2.
 - The various Machine Learning model were tested and analized and details are in [Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file.
 - Considering the best accuracy rate achieved so far we decided to use Random Forest Regressor.
 
+#### ![Machine Learning Program Flow]( https://github.com/ebskii52/finalProject2020/blob/master/ML_ProgramFlow.PNG)
+
 ## Dashboard - Tableau 
 [Link to Tableau Dashboard]( https://public.tableau.com/profile/seghen7339#!/vizhome/Workbook_FinalProject_test2/Story1?publish=yes)
 	- Each Dashboard slide has an interactive component where the user can choose to display data either by city, postal_code or restaurant category (ethnic_type). 
