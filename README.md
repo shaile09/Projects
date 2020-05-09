@@ -9,7 +9,7 @@
 =======
 # Description of the source of data
 
- - The team found a dataset on Kaggle.com to conduct this analysis - https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2
+ - The team found a dataset on Kaggle.com to conduct this analysis - [Yelp Dataset Link]( https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2)
  - From the data set will be using business data
  	- Detailed information of the businesses (restaurant id, location, postal code, stars, review count, etc.) 
  - And will also use Business reviews data
@@ -37,7 +37,7 @@ We are hoping to answer the following questions:
 
 =======
 # Project Outline
-- All previous segment README submissions are in this ![Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file. We updated main README to reflect our final project.
+- All previous segment README submissions are in this [Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file. We updated main README to reflect our final project.
 
 - requirement.txt added to Github that includes the packages used.
 - Softwares Used:
@@ -56,9 +56,9 @@ We are hoping to answer the following questions:
 	-Tableau is the application used to display our data. We feel that tableau will give the user the most simplest way of looking at which location geographically is best when considering location and type of restaurant to open. It will include comparable data, such as what type of restaurant it is, whether it got a good or a bad rating, and exactly where it is located.
 
 
-## ![Presentation link]( https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p)
+## [Presentation link]( https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p)
 
-## ETL / Prepocessing of the Yelp Data - ![Yelp_ETL.py]()
+## ETL / Prepocessing of the Yelp Data - [Yelp_ETL.py]( https://github.com/ebskii52/finalProject2020/blob/master/Yelp_ETL.py)
 
 - Import and analyze yelp businesses dataset.
 	- Opened business.json file and imported into a dataframe.
@@ -89,21 +89,21 @@ We are hoping to answer the following questions:
 	- Yelp_db is used to pull from the database the business_reviews and business_info tables for machine learning.
 	- The  business_info and business_reviews are joined to create join within posgres. # Placeholder 
 	- Due to restrictions on the cost of AWS, we do not have shared databased, instead use local posgres database with same table schema (schema.sql) to acess the data.
-		- The sample database can be accessed at https://yelpdbbackup.s3.us-east-2.amazonaws.com/Yelp_db.sql. 
+		- The sample database can be accessed at [Sample Database]( https://yelpdbbackup.s3.us-east-2.amazonaws.com/Yelp_db.sql) 
 		
 ## Link to the ERD Model
 ![]( https://github.com/ebskii52/finalProject2020/blob/knar/segment%232/ERD_schema.PNG)
 	
-## Machine Learning Process - ![YelpRandomForest.py]( https://github.com/ebskii52/finalProject2020/blob/master/YelpRandomForest.py)
+## Machine Learning Process - [YelpRandomForest.py]( https://github.com/ebskii52/finalProject2020/blob/master/YelpRandomForest.py)
 - Random Forest Classifier/Regressor - Little pre-processing needs to be done. The data usually does not need to be rescaled or transformed. Predictions and training speeds are much quicker. The main difference between the two is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).
 - Random Forest Regressor. Use average of all the branches to predict value. Used 1 to 5 as continuous values.
 The accuracy here came out to be around 90%. These were identified by gridSearchCV.
 Parameters used n_estimators=50, max_depth=32, random_state=2.
-- The various Machine Learning model were tested and analized and details are in ![Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file.
+- The various Machine Learning model were tested and analized and details are in [Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file.
 - Considering the best accuracy rate achieved so far we decided to use Random Forest Regressor.
 
 ## Dashboard - Tableau 
-![Link to Tableau Dashboard]( https://public.tableau.com/profile/seghen7339#!/vizhome/Workbook_FinalProject_test2/Story1?publish=yes)
+[Link to Tableau Dashboard]( https://public.tableau.com/profile/seghen7339#!/vizhome/Workbook_FinalProject_test2/Story1?publish=yes)
 	- Each Dashboard slide has an interactive component where the user can choose to display data either by city, postal_code or restaurant category (ethnic_type). 
 	- Dashboard: 
 		- shows the total business counts for Las Vegas (2455) and Phoenix (1557). 
