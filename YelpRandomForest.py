@@ -152,8 +152,7 @@ y_pred = rf_model.predict(X_test_scaled)
 
 # %%
 #Score found for random forest regressor
-out = rf_model.score(X_test_scaled,y_test)
-f.write("Accuracy Score"%out) 
+rf_model.score(X_test_scaled,y_test)
 
 # %%
 #Predictions for entire dataset with unique features
