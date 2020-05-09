@@ -88,7 +88,12 @@ We are hoping to answer the following questions:
 	- Database stores business_info, business_reviews and review_prediction (machine_learning) tables.
 	- Yelp_db is used to pull from the database the business_reviews and business_info tables for machine learning.
 	- The  business_info and business_reviews are joined to create join within posgres. # Placeholder 
-	- Due to restrictions on the cost of AWS, we do not have shared databased, instead use local posgres database with same table schema (schema.sql) to acess the data.
+	- Due to restrictions on the cost of AWS, we do not have shared databased, instead use local posgres database with same table
+	schema (schema.sql) to acess the data.
+	- Database join used for YelpRandomForest.py is:
+		- 'select r.review_star stars,b.city, b.postal_code, 
+        	     r.ethnic_type from business_reviews r, business_info b where 
+            		b.business_id = r.business_id and length(b.postal_code)>0'
 		- The sample database can be accessed at [Sample Database]( https://yelpdbbackup.s3.us-east-2.amazonaws.com/Yelp_db.sql) 
 		
 ## Link to the ERD Model
