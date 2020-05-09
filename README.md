@@ -9,7 +9,7 @@
 =======
 # Description of the source of data
 
- - The team found a dataset on Kaggle.com to conduct this analysis - https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2
+ - The team found a dataset on Kaggle.com to conduct this analysis - ![Yelp Dataset Link]( https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2)
  - From the data set will be using business data
  	- Detailed information of the businesses (restaurant id, location, postal code, stars, review count, etc.) 
  - And will also use Business reviews data
@@ -58,7 +58,7 @@ We are hoping to answer the following questions:
 
 ## ![Presentation link]( https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p)
 
-## ETL / Prepocessing of the Yelp Data - ![Yelp_ETL.py]()
+## ETL / Prepocessing of the Yelp Data - ![Yelp_ETL.py]( https://github.com/ebskii52/finalProject2020/blob/master/Yelp_ETL.py)
 
 - Import and analyze yelp businesses dataset.
 	- Opened business.json file and imported into a dataframe.
