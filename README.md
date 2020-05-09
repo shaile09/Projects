@@ -9,7 +9,7 @@
 =======
 # Description of the source of data
 
- - The team found a dataset on Kaggle.com to conduct this analysis - ![Yelp Dataset Link]( https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2)
+ - The team found a dataset on Kaggle.com to conduct this analysis - [Yelp Dataset Link]( https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2)
  - From the data set will be using business data
  	- Detailed information of the businesses (restaurant id, location, postal code, stars, review count, etc.) 
  - And will also use Business reviews data
@@ -56,7 +56,7 @@ We are hoping to answer the following questions:
 	-Tableau is the application used to display our data. We feel that tableau will give the user the most simplest way of looking at which location geographically is best when considering location and type of restaurant to open. It will include comparable data, such as what type of restaurant it is, whether it got a good or a bad rating, and exactly where it is located.
 
 
-## ![Presentation link]( https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p)
+## [Presentation link]( https://docs.google.com/presentation/d/1RmP25RHScKQilyfSACAFbge-9NbVzzcVNlpxeGMc4zk/edit#slide=id.p)
 
 ## ETL / Prepocessing of the Yelp Data - ![Yelp_ETL.py]( https://github.com/ebskii52/finalProject2020/blob/master/Yelp_ETL.py)
 
@@ -103,7 +103,7 @@ Parameters used n_estimators=50, max_depth=32, random_state=2.
 - Considering the best accuracy rate achieved so far we decided to use Random Forest Regressor.
 
 ## Dashboard - Tableau 
-![Link to Tableau Dashboard]( https://public.tableau.com/profile/seghen7339#!/vizhome/Workbook_FinalProject_test2/Story1?publish=yes)
+[Link to Tableau Dashboard]( https://public.tableau.com/profile/seghen7339#!/vizhome/Workbook_FinalProject_test2/Story1?publish=yes)
 	- Each Dashboard slide has an interactive component where the user can choose to display data either by city, postal_code or restaurant category (ethnic_type). 
 	- Dashboard: 
 		- shows the total business counts for Las Vegas (2455) and Phoenix (1557). 
