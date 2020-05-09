@@ -69,7 +69,6 @@ X = reviewsDF
 category_countsX=X.ethnic_type.value_counts()
 replace_type=list(category_countsX[category_countsX<4000].index)
 
-
 # %%
 #Combine ethnic types with others
 for application in replace_type:
@@ -79,7 +78,6 @@ for application in replace_type:
 # Generate our categorical variable list
 review_catX = X.dtypes[X.dtypes == "object"].index.tolist()
 
-
 # %%
 #Remove decimal from star review
 yDF['stars'] = yDF['stars'].astype(str).replace('\.0', '', regex=True)
@@ -88,28 +86,15 @@ yDF['stars'] = yDF['stars'].astype(str).replace('\.0', '', regex=True)
 # Generate our categorical variable list for y
 review_caty = yDF.dtypes[yDF.dtypes == "object"].index.tolist()
 
-
 # %%
 predict_inputDF = X
 predict_inputDF['stars'] = round(predict_inputDF['stars'])
-
 
 # %%
 #Start preparing reviews Dataframe for final output
 reviews_for_output = pd.DataFrame(predict_inputDF.groupby(['postal_code',\
     'city','ethnic_type'],as_index=False).sum())
 reviews_for_output = reviews_for_output.drop(['stars'], axis = 'columns')
-
-# %%
-XInput=predict_inputDF.drop(columns=['stars'])
-
-
-
-# %%
-#Start preparing reviews Dataframe for final output
-reviews_for_output = pd.DataFrame(predict_inputDF.groupby(['postal_code','city','ethnic_type'],as_index=False).sum())
-reviews_for_output = reviews_for_output.drop(['stars'], axis = 'columns')
-
 
 # %%
 XInput=predict_inputDF.drop(columns=['stars'])
@@ -135,7 +120,7 @@ X_test_data= X
 dummy_categories1 = pd.get_dummies(reviews_for_output.ethnic_type)
 dummy_city1 = pd.get_dummies(reviews_for_output.city)
 final_outputX = pd.concat([reviews_for_output, dummy_categories1], \
-axis = 'columns')
+    axis = 'columns')
 final_outputX = pd.concat([final_outputX, dummy_city1], axis = 'columns')
 final_outputX = final_outputX.drop(['city', 'ethnic_type'], axis = 'columns')
 
@@ -149,9 +134,7 @@ scaler = StandardScaler()
 x_scaler=scaler.fit(X_train)
 X_train_scaled = x_scaler.transform(X_train)
 X_test_scaled = x_scaler.fit_transform(X_test)
-x_test_data_scaled = x_scaler.fit_transform(final_outputX)                     
-
-
+x_test_data_scaled = x_scaler.fit_transform(final_outputX)
 
 # %%
 # Create a model
@@ -184,15 +167,13 @@ f.write("Accuracy Score"%out)
 # %%
 #Create dataframe to load into database
 reviews_for_output['prediction']=np.round(ynew)
-
 reviews_for_output['prediction']=reviews_for_output['prediction'].astype(str).\
     replace('\.0', '', regex=True)
-
 
 # %%
 #Insert data into postgres
 try:
-        reviews_for_output.to_sql(name='review_prediction', con=engine, \
+    reviews_for_output.to_sql(name='review_prediction', con=engine, \
         if_exists='replace',index=True)
 except psycopg2.DatabaseError as error:
     f.write("Review Predition issue")   
