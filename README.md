@@ -1,12 +1,12 @@
 # Final Project - Restaurant Types and Reviews 
 
-=======
+
 # Project Overview
 
  - Bill (an investor) went to work to visit Phoenix and Las Vegas for a few days and he really liked the restaurant options that are available since he is interested in opening a restaurant business himself in either Phoenix or Las Vegas .  
  - In the few days he was in both cities, he was using the Yelp to choose different restaurants near his hotels. Bill is thinking about opening a restaurant in either Las Vegas or Phoenix as there is a lot of variations of food. Before he opens a restaurant, he is interested in learning more what types of restaurants are in these cities, what are the yelp stars, and additional details that would help him make a decision where to open restaurant.
  
-=======
+
 # Description of the source of data
 
  - The team found a dataset on Kaggle.com to conduct this analysis - [Yelp Dataset Link]( https://www.kaggle.com/yelp-dataset/yelp-dataset/version/2)
@@ -15,14 +15,14 @@
  - And will also use Business reviews data
  	- Includes restaurant id, stars, user id, text, etc.
 
-=======
+
 # Hypothesis
 
 Null Hypothesis: There is no correlation between the type of restaurant and review restaurant star rating based on the either Las Vegas or Phoenix
 Hypothesis: There is a correlation between the type of restaurant and review restaurant ratings based on the either Las Vegas or Phoenix
 Label = stars
 
-=======
+
 # Analysis Questions
 
 We are hoping to answer the following questions:
@@ -35,7 +35,7 @@ We are hoping to answer the following questions:
 - Predict future reviews for a new restaurant based on the available data
 - Predict what restaurant to open where
 
-=======
+
 # Project Outline
 - All previous segment README submissions are in this [Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file. We updated main README to reflect our final project.
 
@@ -102,9 +102,12 @@ Parameters used n_estimators=50, max_depth=32, random_state=2.
 - The various Machine Learning model were tested and analized and details are in [Past README]( https://github.com/ebskii52/finalProject2020/blob/seghen/README%20from%20Segment%201-2-3.txt) file.
 - Considering the best accuracy rate achieved so far we decided to use Random Forest Regressor.
 
+#### ![Machine Learning Program Flow]( https://github.com/ebskii52/finalProject2020/blob/master/ML_ProgramFlow.PNG)
+
 ## Dashboard - Tableau 
 [Link to Tableau Dashboard]( https://public.tableau.com/profile/seghen7339#!/vizhome/Workbook_FinalProject_test2/Story1?publish=yes)
-	- Each Dashboard slide has an interactive component where the user can choose to display data either by city, postal_code or restaurant category (ethnic_type). 
+	
+- Each Dashboard slide has an interactive component where the user can choose to display data either by city, postal_code or restaurant category (ethnic_type). 
 	- Dashboard: 
 		- shows the total business counts for Las Vegas (2455) and Phoenix (1557). 
 		- shows that Las Vegas restaurants have higher rating that Phoenix as there are more restaurants in the area.
