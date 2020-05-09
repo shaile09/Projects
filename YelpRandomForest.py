@@ -26,10 +26,18 @@ f= open("RandomForestLog.txt","w+")
 db_string = f"postgres://postgres:{db_password}@127.0.0.1:5432/Yelp_db"
 
 # %% [markdown]
-# Clean data is loaded into postgress. Based on all the data inputs available, and trying mulitple models like Random Forest Classifier, Random Forest Regressor, Deep learning, Linear Regression and Logistic Regression, we came to conclusion that Random Forest Regression fits the best with our data. This improves our accuracy scores and does give resonable weightage to all the features that we were using. As of now I am getting accuracy as 91%
+# Clean data is loaded into postgress. Based on all the data 
+# inputs available, and trying mulitple models like Random Forest 
+# Classifier, Random Forest Regressor, Deep learning, Linear Regression 
+# and Logistic Regression, we came to conclusion that 
+# Random Forest Regression fits the best with our data. 
+# This improves our accuracy scores and does give resonable 
+# weightage to all the features that we were using. 
+# As of now I am getting accuracy as 91%
 
 # %%
-#Connection to postgres and pull data from tables loaded after scrubing
+#Connection to postgres and pull data from tables loaded after 
+#scrubing
 try:
     # Create the database engine with the following
     engine = create_engine(db_string)
@@ -42,7 +50,8 @@ except psycopg2.DatabaseError as error:
 
 
 # %%
-#Write a query to joining multiple tables from postgres database and load the data into data frame
+#Write a query to joining multiple tables from postgres database and 
+# load the data into data frame
 try:
     reviewsDF = pd.read_sql('select r.review_star stars,b.city, b.postal_code, r.ethnic_type from business_reviews r, business_info b where b.business_id = r.business_id and length(b.postal_code)>0',engine)
 except psycopg2.DatabaseError as error:
@@ -59,9 +68,9 @@ X = reviewsDF
 
 
 # %%
-#Combine ethnic types if review counts are less then 4000
-categoryCountsX=X.ethnic_type.value_counts()
-replace_type=list(categoryCountsX[categoryCountsX<4000].index)
+#Combine/Binning ethnic types if review counts are less then 4000.
+category_countsX=X.ethnic_type.value_counts()
+replace_type=list(category_countsX[category_countsX<4000].index)
 
 
 # %%
@@ -72,7 +81,7 @@ for application in replace_type:
 
 # %%
 # Generate our categorical variable list
-reviewCatX = X.dtypes[X.dtypes == "object"].index.tolist()
+review_catX = X.dtypes[X.dtypes == "object"].index.tolist()
 
 
 # %%
@@ -82,36 +91,36 @@ yDF['stars'] = yDF['stars'].astype(str).replace('\.0', '', regex=True)
 
 # %%
 # Generate our categorical variable list for y
-reviewCaty = yDF.dtypes[yDF.dtypes == "object"].index.tolist()
+review_caty = yDF.dtypes[yDF.dtypes == "object"].index.tolist()
 
 
 # %%
-# predictInputDF = pd.DataFrame(X.groupby(['stars','postal_code','city','ethnic_type']).sum()).reset_index()
-predictInputDF = X
-predictInputDF['stars'] = round(predictInputDF['stars'])
+predict_inputDF = X
+predict_inputDF['stars'] = round(predict_inputDF['stars'])
 
 
 # %%
 #Start preparing reviews Dataframe for final output
-reviewsForOutput = pd.DataFrame(predictInputDF.groupby(['postal_code','city','ethnic_type'],as_index=False).sum())
-reviewsForOutput = reviewsForOutput.drop(['stars'], axis = 'columns')
+reviews_for_output = pd.DataFrame(predict_inputDF.groupby(['postal_code','city','ethnic_type'],as_index=False).sum())
+reviews_for_output = reviews_for_output.drop(['stars'], axis = 'columns')
 
 
 # %%
-XInput=predictInputDF.drop(columns=['stars'])
+XInput=predict_inputDF.drop(columns=['stars'])
 
 
 # %%
 #Explode categories. This is similar to oneHotEncoder
-#Get a dataframe ready for predicting entire dataset for final output prediction
-dummyCategories = pd.get_dummies(XInput.ethnic_type)
-dummyCity = pd.get_dummies(XInput.city)
+#Get a dataframe ready for predicting entire dataset for final output 
+# prediction
+dummy_categories = pd.get_dummies(XInput.ethnic_type)
+dummy_city = pd.get_dummies(XInput.city)
 
 
 # %%
 #Get a dataframe ready for preparing training and testing datasets
-new_review_all = pd.concat([XInput, dummyCategories], axis = 'columns')
-new_review_all = pd.concat([new_review_all, dummyCity], axis = 'columns')
+new_review_all = pd.concat([XInput, dummy_categories], axis = 'columns')
+new_review_all = pd.concat([new_review_all, dummy_city], axis = 'columns')
 final_PC = new_review_all.drop(['city', 'ethnic_type'], axis = 'columns')
 X=final_PC
 X_test_data= X
@@ -119,11 +128,11 @@ X_test_data= X
 
 # %%
 #Getting output dataset ready. This means formating it the same as X but should have unique features only.
-dummyCategories1 = pd.get_dummies(reviewsForOutput.ethnic_type)
-dummyCity1 = pd.get_dummies(reviewsForOutput.city)
-finalOutputX = pd.concat([reviewsForOutput, dummyCategories1], axis = 'columns')
-finalOutputX = pd.concat([finalOutputX, dummyCity1], axis = 'columns')
-finalOutputX = finalOutputX.drop(['city', 'ethnic_type'], axis = 'columns')
+dummy_categories1 = pd.get_dummies(reviews_for_output.ethnic_type)
+dummy_city1 = pd.get_dummies(reviews_for_output.city)
+final_outputX = pd.concat([reviews_for_output, dummy_categories1], axis = 'columns')
+final_outputX = pd.concat([final_outputX, dummy_city1], axis = 'columns')
+final_outputX = final_outputX.drop(['city', 'ethnic_type'], axis = 'columns')
 
 
 # %%
@@ -134,7 +143,7 @@ scaler = StandardScaler()
 x_scaler=scaler.fit(X_train)
 X_train_scaled = x_scaler.transform(X_train)
 X_test_scaled = x_scaler.fit_transform(X_test)
-x_test_data_scaled = x_scaler.fit_transform(finalOutputX)                     
+x_test_data_scaled = x_scaler.fit_transform(final_outputX)                     
 
 
 # %%
@@ -173,14 +182,14 @@ f.write("Accuracy Score"%out)
 
 # %%
 #Create dataframe to load into database
-reviewsForOutput['prediction']=np.round(ynew)
-reviewsForOutput['prediction']=reviewsForOutput['prediction'].astype(str).replace('\.0', '', regex=True)
+reviews_for_output['prediction']=np.round(ynew)
+reviews_for_output['prediction']=reviews_for_output['prediction'].astype(str).replace('\.0', '', regex=True)
 
 
 # %%
 #Insert data into postgres
 try:
-    reviewsForOutput.to_sql(name='review_prediction', con=engine, if_exists='replace' ,index=True)
+    reviews_for_output.to_sql(name='review_prediction', con=engine, if_exists='replace' ,index=True)
 except psycopg2.DatabaseError as error:
     f.write("Review Predition issue")   
     f.close()
@@ -190,9 +199,11 @@ except psycopg2.DatabaseError as error:
 # %%
 #Create a .csv file
 try:
-    reviewsForOutput.to_csv('review_prediction.csv')
-except 
-
+    reviews_for_output.to_csv('review_prediction.csv')
+except IOError as error:
+    f.write("Review Predition issue")   
+    f.close()
+    sys.exit()
 
 # %%
 #File close
