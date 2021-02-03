@@ -18,9 +18,8 @@
 
 # Hypothesis
 
-Null Hypothesis: There is no correlation between the type of restaurant and review restaurant star rating based on the either Las Vegas or Phoenix
-Hypothesis: There is a correlation between the type of restaurant and review restaurant ratings based on the either Las Vegas or Phoenix
-Label = stars
+Null Hypothesis: There is no correlation between the type of restaurant and review restaurant star rating based on the two locations (Las Vegas or Phoenix)
+Hypothesis: There is a correlation between the type of restaurant and review restaurant star ratings based on based on the two locations (Las Vegas or Phoenix)
 
 
 # Analysis Questions
